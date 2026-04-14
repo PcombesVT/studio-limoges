@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Studio à Louer à Limoges – Location Studio Étudiant 87 | Studio-Limoges.fr</title>
+  <meta name="description" content="Trouvez votre studio à louer à Limoges : studios meublés pour étudiants près des facultés, centre-ville, quartier Borie. Éligibles APL. Gérés par l'agence Begip, spécialiste du logement étudiant à Limoges depuis plus de 20 ans." />
+  <meta name="keywords" content="studio louer Limoges, studio étudiant Limoges, studio meublé Limoges 87, location studio Limoges, studio Borie Limoges, studio centre-ville Limoges, APL Limoges" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://studio-limoges.fr/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Studio à Louer à Limoges – Begip" />
+  <meta property="og:description" content="Studios meublés pour étudiants à Limoges. Près des facultés, éligibles APL. Gérés par Begip." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://studio-limoges.fr/" />
+  <meta property="og:locale" content="fr_FR" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Begip – Studios à Limoges",
+    "description": "Spécialiste de la location de studios meublés pour étudiants à Limoges depuis plus de 20 ans.",
+    "url": "https://studio-limoges.fr/",
+    "telephone": "+33555339750",
+    "email": "agence@begip.fr",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Limoges",
+      "postalCode": "87000",
+      "addressCountry": "FR"
+    },
+    "sameAs": ["https://begip.fr"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Literata:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --terracotta: #c4622d;
+      --terracotta-light: #e8845a;
+      --terracotta-pale: #fdf0ea;
+      --dark: #1a1412;
+      --dark-mid: #2d2320;
+      --warm-white: #faf8f5;
+      --text: #2d2320;
+      --muted: #7a6d68;
+      --border: rgba(196,98,45,.15);
+      --radius: 14px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Literata', Georgia, serif;
+      background: var(--warm-white);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 48px;
+      background: rgba(26,20,18,.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(196,98,45,.2);
+      animation: slideDown .5s ease both;
+    }
+    @keyframes slideDown { from { transform: translateY(-100%); opacity:0; } to { transform: translateY(0); opacity:1; } }
+
+    .nav-logo {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800; font-size: 1.15rem;
+      color: var(--terracotta);
+      text-decoration: none; letter-spacing: .02em;
+    }
+    .nav-logo span { color: rgba(255,255,255,.6); font-weight: 400; }
+
+    .nav-right { display: flex; align-items: center; gap: 32px; }
+    .nav-link {
+      color: rgba(255,255,255,.6); text-decoration: none;
+      font-family: 'Syne', sans-serif; font-size: .8rem;
+      letter-spacing: .08em; text-transform: uppercase;
+      transition: color .2s;
+    }
+    .nav-link:hover { color: var(--terracotta-light); }
+
+    .nav-cta {
+      background: var(--terracotta);
+      color: #fff !important;
+      padding: 9px 22px; border-radius: 50px;
+      font-weight: 600 !important;
+      transition: background .2s, transform .15s !important;
+    }
+    .nav-cta:hover { background: var(--terracotta-light) !important; transform: translateY(-1px); }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      background: var(--dark);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      position: relative; overflow: hidden;
+    }
+
+    .hero-left {
+      display: flex; flex-direction: column; justify-content: center;
+      padding: 140px 64px 80px 64px;
+      position: relative; z-index: 1;
+    }
+
+    .hero-tag {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-family: 'Syne', sans-serif;
+      font-size: .72rem; letter-spacing: .16em; text-transform: uppercase;
+      color: var(--terracotta); margin-bottom: 28px;
+      animation: fadeUp .6s .2s both;
+    }
+    .hero-tag::before { content: ''; width: 28px; height: 1px; background: var(--terracotta); }
+
+    .hero h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(2.6rem, 4.5vw, 4rem);
+      font-weight: 800; line-height: 1.08;
+      color: #fff; margin-bottom: 28px;
+      animation: fadeUp .6s .35s both;
+    }
+    .hero h1 em {
+      color: var(--terracotta); font-style: normal;
+      position: relative;
+    }
+
+    .hero-desc {
+      font-size: 1.05rem; line-height: 1.75;
+      color: rgba(255,255,255,.6);
+      max-width: 440px; margin-bottom: 40px;
+      animation: fadeUp .6s .5s both;
+    }
+
+    .hero-actions {
+      display: flex; gap: 14px; flex-wrap: wrap;
+      animation: fadeUp .6s .65s both;
+    }
+
+    .btn-primary {
+      background: var(--terracotta);
+      color: #fff; padding: 14px 32px; border-radius: 50px;
+      font-family: 'Syne', sans-serif; font-weight: 600; font-size: .88rem;
+      text-decoration: none; letter-spacing: .04em;
+      transition: background .2s, transform .15s, box-shadow .2s;
+      box-shadow: 0 4px 20px rgba(196,98,45,.35);
+    }
+    .btn-primary:hover { background: var(--terracotta-light); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(196,98,45,.45); }
+
+    .btn-ghost {
+      border: 1.5px solid rgba(255,255,255,.25);
+      color: rgba(255,255,255,.8);
+      padding: 14px 32px; border-radius: 50px;
+      font-family: 'Syne', sans-serif; font-size: .88rem;
+      text-decoration: none;
+      transition: border-color .2s, background .2s;
+    }
+    .btn-ghost:hover { border-color: var(--terracotta); background: rgba(196,98,45,.1); }
+
+    /* Hero badges */
+    .hero-badges {
+      display: flex; gap: 12px; margin-top: 48px; flex-wrap: wrap;
+      animation: fadeUp .6s .8s both;
+    }
+    .badge {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.1);
+      padding: 8px 16px; border-radius: 50px;
+      font-family: 'Syne', sans-serif; font-size: .75rem;
+      color: rgba(255,255,255,.6); letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .badge.gold { border-color: rgba(196,98,45,.4); color: var(--terracotta-light); }
+
+    /* Hero right — visual panel */
+    .hero-right {
+      background: linear-gradient(160deg, #2d1f1a 0%, #1a1412 100%);
+      display: flex; flex-direction: column; justify-content: center;
+      padding: 140px 48px 80px 48px;
+      position: relative; overflow: hidden;
+      animation: fadeUp .8s .3s both;
+    }
+    .hero-right::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 70% 60% at 60% 30%, rgba(196,98,45,.15) 0%, transparent 70%);
+    }
+
+    .price-showcase {
+      position: relative; z-index: 1;
+    }
+    .price-label {
+      font-family: 'Syne', sans-serif; font-size: .72rem;
+      text-transform: uppercase; letter-spacing: .14em;
+      color: rgba(255,255,255,.4); margin-bottom: 16px;
+    }
+    .price-range {
+      font-family: 'Syne', sans-serif; font-weight: 800;
+      font-size: clamp(2.5rem, 4vw, 3.5rem);
+      color: #fff; line-height: 1;
+      margin-bottom: 6px;
+    }
+    .price-range span { color: var(--terracotta); }
+    .price-sub { font-size: .9rem; color: rgba(255,255,255,.45); margin-bottom: 36px; }
+
+    .feature-list { display: flex; flex-direction: column; gap: 12px; }
+    .feature-item {
+      display: flex; align-items: center; gap: 14px;
+      padding: 14px 18px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: 10px;
+      transition: background .2s, border-color .2s;
+    }
+    .feature-item:hover { background: rgba(196,98,45,.1); border-color: rgba(196,98,45,.25); }
+    .feature-icon { font-size: 1.2rem; flex-shrink: 0; }
+    .feature-text { font-family: 'Syne', sans-serif; font-size: .85rem; color: rgba(255,255,255,.7); }
+    .feature-check { margin-left: auto; color: var(--terracotta); font-size: .9rem; }
+
+    /* ── SECTIONS ── */
+    section { padding: 96px 48px; }
+    .section-inner { max-width: 1160px; margin: 0 auto; }
+
+    .section-tag {
+      font-family: 'Syne', sans-serif; font-size: .72rem;
+      text-transform: uppercase; letter-spacing: .16em;
+      color: var(--terracotta); display: flex; align-items: center; gap: 10px;
+      margin-bottom: 14px;
+    }
+    .section-tag::before { content: ''; width: 22px; height: 1px; background: var(--terracotta); }
+
+    h2 {
+      font-family: 'Syne', sans-serif; font-weight: 800;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      line-height: 1.12; color: var(--dark);
+      margin-bottom: 16px;
+    }
+    .section-sub {
+      font-size: 1.05rem; color: var(--muted); line-height: 1.7;
+      max-width: 520px; margin-bottom: 56px;
+    }
+
+    /* ── STUDIOS GRID ── */
+    .studios-section { background: var(--warm-white); }
+
+    .studios-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    }
+
+    .studio-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      text-decoration: none; color: inherit;
+      display: block;
+      transition: transform .25s, box-shadow .25s, border-color .25s;
+      box-shadow: 0 2px 8px rgba(0,0,0,.04);
+    }
+    .studio-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(196,98,45,.12);
+      border-color: rgba(196,98,45,.3);
+    }
+
+    .studio-card-img {
+      height: 200px;
+      background: linear-gradient(135deg, var(--dark-mid) 0%, var(--dark) 100%);
+      position: relative; overflow: hidden;
+      display: flex; align-items: flex-end;
+      padding: 20px;
+    }
+    .studio-card-img::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(196,98,45,.2) 0%, transparent 70%);
+    }
+    .studio-surface {
+      font-family: 'Syne', sans-serif; font-weight: 800;
+      font-size: 3.5rem; color: rgba(255,255,255,.08);
+      position: absolute; bottom: -8px; right: 12px; line-height: 1;
+    }
+    .studio-pill {
+      background: var(--terracotta);
+      color: #fff; font-family: 'Syne', sans-serif;
+      font-size: .7rem; font-weight: 600; letter-spacing: .08em;
+      padding: 5px 14px; border-radius: 50px;
+      text-transform: uppercase; position: relative; z-index: 1;
+    }
+    .studio-pill.available { background: #2d7a4f; }
+    .studio-pill.soon { background: #b07a20; }
+
+    .studio-card-body { padding: 22px; }
+    .studio-card-title {
+      font-family: 'Syne', sans-serif; font-weight: 700;
+      font-size: 1.1rem; color: var(--dark); margin-bottom: 4px;
+    }
+    .studio-card-zone {
+      font-size: .82rem; color: var(--muted); margin-bottom: 16px;
+      display: flex; align-items: center; gap: 6px;
+    }
+    .studio-card-zone::before { content: '📍'; font-size: .75rem; }
+
+    .studio-card-details {
+      display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px;
+    }
+    .detail-chip {
+      background: var(--terracotta-pale);
+      color: var(--terracotta);
+      font-family: 'Syne', sans-serif; font-size: .72rem;
+      font-weight: 600; letter-spacing: .04em;
+      padding: 4px 12px; border-radius: 50px;
+    }
+
+    .studio-card-footer {
+      display: flex; align-items: center; justify-content: space-between;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+    .studio-price {
+      font-family: 'Syne', sans-serif; font-weight: 800;
+      font-size: 1.3rem; color: var(--dark);
+    }
+    .studio-price span { font-size: .8rem; font-weight: 400; color: var(--muted); }
+    .studio-cta {
+      font-family: 'Syne', sans-serif; font-size: .78rem;
+      font-weight: 600; color: var(--terracotta);
+      display: flex; align-items: center; gap: 4px;
+      transition: gap .2s;
+    }
+    .studio-card:hover .studio-cta { gap: 8px; }
+
+    /* ── CAMPUS SECTION ── */
+    .campus-section { background: var(--dark); }
+    .campus-section h2 { color: #fff; }
+    .campus-section .section-sub { color: rgba(255,255,255,.5); }
+
+    .campus-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;
+    }
+
+    .campus-card {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: var(--radius); padding: 28px;
+      transition: background .25s, border-color .25s, transform .25s;
+    }
+    .campus-card:hover {
+      background: rgba(196,98,45,.1);
+      border-color: rgba(196,98,45,.3);
+      transform: translateY(-3px);
+    }
+
+    .campus-zone {
+      display: inline-block;
+      background: var(--terracotta);
+      color: #fff; font-family: 'Syne', sans-serif;
+      font-size: .68rem; font-weight: 600; letter-spacing: .1em;
+      padding: 4px 12px; border-radius: 50px;
+      text-transform: uppercase; margin-bottom: 14px;
+    }
+    .campus-name {
+      font-family: 'Syne', sans-serif; font-weight: 700;
+      font-size: 1.1rem; color: #fff; margin-bottom: 10px;
+    }
+    .campus-schools {
+      font-size: .88rem; color: rgba(255,255,255,.5);
+      line-height: 1.6; margin-bottom: 14px;
+    }
+    .campus-distance {
+      font-family: 'Syne', sans-serif; font-size: .78rem;
+      color: var(--terracotta-light);
+      display: flex; align-items: center; gap: 6px;
+    }
+    .campus-distance::before { content: '🚶'; }
+
+    /* ── APL SECTION ── */
+    .apl-section { background: var(--terracotta-pale); }
+
+    .apl-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+    }
+
+    .apl-visual {
+      background: var(--terracotta);
+      border-radius: 24px; padding: 48px;
+      text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .apl-visual::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(255,255,255,.15) 0%, transparent 60%);
+    }
+    .apl-big {
+      font-family: 'Syne', sans-serif; font-weight: 800;
+      font-size: 5rem; color: rgba(255,255,255,.15);
+      line-height: 1; position: relative; z-index: 1;
+    }
+    .apl-amount {
+      font-family: 'Syne', sans-serif; font-weight: 800;
+      font-size: 2.8rem; color: #fff; line-height: 1;
+      margin: -20px 0 8px; position: relative; z-index: 1;
+    }
+    .apl-label { color: rgba(255,255,255,.8); font-size: .9rem; position: relative; z-index: 1; }
+
+    .apl-content h2 { color: var(--dark); margin-bottom: 16px; }
+    .apl-text { font-size: 1rem; line-height: 1.75; color: var(--muted); margin-bottom: 28px; }
+
+    .apl-links { display: flex; flex-direction: column; gap: 12px; }
+    .apl-link {
+      display: flex; align-items: center; gap: 14px;
+      padding: 16px 20px;
+      background: #fff; border-radius: 10px;
+      text-decoration: none; color: var(--dark);
+      border: 1px solid var(--border);
+      font-family: 'Syne', sans-serif; font-size: .88rem; font-weight: 600;
+      transition: border-color .2s, transform .2s, box-shadow .2s;
+    }
+    .apl-link:hover { border-color: var(--terracotta); transform: translateX(4px); box-shadow: 0 4px 16px rgba(196,98,45,.1); }
+    .apl-link-icon { font-size: 1.2rem; }
+    .apl-link-arrow { margin-left: auto; color: var(--terracotta); }
+
+    /* ── VIE ÉTUDIANTE ── */
+    .vie-section { background: var(--warm-white); }
+
+    .vie-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    }
+
+    .vie-card {
+      padding: 28px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: #fff;
+      transition: transform .25s, box-shadow .25s;
+    }
+    .vie-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,.07); }
+    .vie-icon { font-size: 2rem; margin-bottom: 16px; display: block; }
+    .vie-title {
+      font-family: 'Syne', sans-serif; font-weight: 700;
+      font-size: 1rem; color: var(--dark); margin-bottom: 10px;
+    }
+    .vie-text { font-size: .9rem; color: var(--muted); line-height: 1.65; }
+
+    /* ── BEGIP SECTION ── */
+    .begip-section {
+      background: var(--dark);
+      text-align: center;
+    }
+    .begip-section h2 { color: #fff; margin: 0 auto 16px; max-width: 600px; }
+    .begip-sub { color: rgba(255,255,255,.5); max-width: 500px; margin: 0 auto 40px; font-size: 1rem; line-height: 1.7; }
+
+    .begip-stats {
+      display: flex; justify-content: center; gap: 64px;
+      margin-bottom: 48px;
+    }
+    .begip-stat-num {
+      font-family: 'Syne', sans-serif; font-weight: 800;
+      font-size: 2.8rem; color: var(--terracotta); line-height: 1;
+    }
+    .begip-stat-label {
+      font-family: 'Syne', sans-serif; font-size: .72rem;
+      text-transform: uppercase; letter-spacing: .1em;
+      color: rgba(255,255,255,.4); margin-top: 6px;
+    }
+
+    .begip-cta-group { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+    .btn-outline {
+      border: 1.5px solid rgba(255,255,255,.25);
+      color: rgba(255,255,255,.8);
+      padding: 14px 32px; border-radius: 50px;
+      font-family: 'Syne', sans-serif; font-size: .88rem;
+      text-decoration: none;
+      transition: border-color .2s, background .2s;
+    }
+    .btn-outline:hover { border-color: var(--terracotta); background: rgba(196,98,45,.1); }
+
+    /* ── CONTACT BANNER ── */
+    .contact-banner {
+      background: linear-gradient(135deg, var(--terracotta) 0%, #a84e22 100%);
+      padding: 56px 48px; text-align: center;
+    }
+    .contact-inner { max-width: 600px; margin: 0 auto; }
+    .contact-title {
+      font-family: 'Syne', sans-serif; font-weight: 800;
+      font-size: 1.8rem; color: #fff; margin-bottom: 10px;
+    }
+    .contact-sub { color: rgba(255,255,255,.8); margin-bottom: 28px; font-size: .95rem; line-height: 1.6; }
+    .contact-links { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .contact-link {
+      background: #fff; color: var(--terracotta);
+      padding: 12px 28px; border-radius: 50px;
+      text-decoration: none; font-family: 'Syne', sans-serif;
+      font-weight: 700; font-size: .88rem;
+      transition: transform .15s, box-shadow .2s;
+    }
+    .contact-link:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.2); }
+    .contact-link.ghost {
+      background: transparent; color: #fff;
+      border: 1.5px solid rgba(255,255,255,.5);
+      font-weight: 500;
+    }
+    .contact-link.ghost:hover { border-color: #fff; background: rgba(255,255,255,.1); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #0d0a09;
+      padding: 48px;
+      color: rgba(255,255,255,.4);
+    }
+    .footer-inner {
+      max-width: 1160px; margin: 0 auto;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 24px;
+    }
+    .footer-logo {
+      font-family: 'Syne', sans-serif; font-weight: 800;
+      color: var(--terracotta); font-size: 1rem;
+      text-decoration: none;
+    }
+    .footer-links { display: flex; gap: 28px; }
+    .footer-links a {
+      color: rgba(255,255,255,.35); text-decoration: none;
+      font-family: 'Syne', sans-serif; font-size: .78rem;
+      letter-spacing: .06em; text-transform: uppercase;
+      transition: color .2s;
+    }
+    .footer-links a:hover { color: var(--terracotta-light); }
+    .footer-copy { font-size: .78rem; }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(22px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .reveal {
+      opacity: 0; transform: translateY(28px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 960px) {
+      nav { padding: 14px 24px; }
+      .hero { grid-template-columns: 1fr; }
+      .hero-right { display: none; }
+      .hero-left { padding: 120px 24px 60px; }
+      section { padding: 64px 24px; }
+      .studios-grid { grid-template-columns: repeat(2, 1fr); }
+      .campus-grid { grid-template-columns: 1fr; }
+      .apl-grid { grid-template-columns: 1fr; }
+      .vie-grid { grid-template-columns: 1fr 1fr; }
+      .begip-stats { gap: 36px; }
+      footer { padding: 36px 24px; }
+      .footer-inner { flex-direction: column; align-items: flex-start; gap: 20px; }
+    }
+    @media (max-width: 560px) {
+      .studios-grid { grid-template-columns: 1fr; }
+      .vie-grid { grid-template-columns: 1fr; }
+      .begip-stats { flex-direction: column; gap: 24px; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── NAVIGATION ── -->
+<nav>
+  <a href="/" class="nav-logo">Studio<span>-Limoges.fr</span></a>
+  <div class="nav-right">
+    <a href="#studios" class="nav-link">Studios disponibles</a>
+    <a href="#campus" class="nav-link">Campus</a>
+    <a href="#apl" class="nav-link">APL</a>
+    <a href="https://begip.fr" target="_blank" rel="noopener noreferrer" class="nav-link nav-cta">Contacter Begip</a>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<header class="hero" role="banner">
+  <div class="hero-left">
+    <div class="hero-tag">Location de studios — Limoges 87</div>
+    <h1>Votre studio<br />à <em>Limoges</em>,<br />sans stress</h1>
+    <p class="hero-desc">
+      Studios meublés pour étudiants, proches de toutes les facultés de Limoges. Gérés par Begip, spécialiste du logement étudiant depuis plus de 20 ans.
+    </p>
+    <div class="hero-actions">
+      <a href="#studios" class="btn-primary">Voir les studios</a>
+      <a href="https://begip.fr" target="_blank" rel="noopener noreferrer" class="btn-ghost">Begip.fr →</a>
+    </div>
+    <div class="hero-badges">
+      <span class="badge gold">Éligible APL</span>
+      <span class="badge">Meublés & équipés</span>
+      <span class="badge">900 logements à Limoges</span>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="price-showcase">
+      <div class="price-label">Studios disponibles à partir de</div>
+      <div class="price-range"><span>350</span> €</div>
+      <div class="price-sub">charges comprises / mois — hors APL</div>
+
+      <div class="feature-list">
+        <div class="feature-item">
+          <span class="feature-icon">🛋️</span>
+          <span class="feature-text">Entièrement meublé et équipé</span>
+          <span class="feature-check">✓</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📶</span>
+          <span class="feature-text">WiFi haut débit inclus</span>
+          <span class="feature-check">✓</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🎓</span>
+          <span class="feature-text">Proche de toutes les facultés</span>
+          <span class="feature-check">✓</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">💶</span>
+          <span class="feature-text">Éligible APL — aide CAF</span>
+          <span class="feature-check">✓</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🔑</span>
+          <span class="feature-text">Gestion professionnelle Begip</span>
+          <span class="feature-check">✓</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ── STUDIOS DISPONIBLES ── -->
+<section class="studios-section" id="studios">
+  <div class="section-inner">
+    <div class="section-tag">Nos studios</div>
+    <h2 class="reveal">Studios actuellement<br />disponibles à Limoges</h2>
+    <p class="section-sub reveal">Des logements meublés, prêts à vivre, dans les quartiers les mieux situés pour vos études. Contactez Begip pour connaître les disponibilités en temps réel.</p>
+
+    <div class="studios-grid">
+
+      <a href="https://begip.fr" target="_blank" rel="noopener noreferrer" class="studio-card reveal">
+        <div class="studio-card-img">
+          <span class="studio-surface">18</span>
+          <span class="studio-pill available">Disponible</span>
+        </div>
+        <div class="studio-card-body">
+          <div class="studio-card-title">Studio 18 m² — La Borie</div>
+          <div class="studio-card-zone">Quartier La Borie, Limoges ouest</div>
+          <div class="studio-card-details">
+            <span class="detail-chip">Meublé</span>
+            <span class="detail-chip">Cuisine équipée</span>
+            <span class="detail-chip">WiFi</span>
+          </div>
+          <div class="studio-card-footer">
+            <div class="studio-price">370 € <span>cc/mois</span></div>
+            <div class="studio-cta">Voir l'offre →</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://begip.fr" target="_blank" rel="noopener noreferrer" class="studio-card reveal">
+        <div class="studio-card-img">
+          <span class="studio-surface">25</span>
+          <span class="studio-pill available">Disponible</span>
+        </div>
+        <div class="studio-card-body">
+          <div class="studio-card-title">Studio 25 m² — Centre-ville</div>
+          <div class="studio-card-zone">Hyper centre, proche fac de Droit</div>
+          <div class="studio-card-details">
+            <span class="detail-chip">Meublé</span>
+            <span class="detail-chip">Double vitrage</span>
+            <span class="detail-chip">Calme</span>
+          </div>
+          <div class="studio-card-footer">
+            <div class="studio-price">430 € <span>cc/mois</span></div>
+            <div class="studio-cta">Voir l'offre →</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://begip.fr" target="_blank" rel="noopener noreferrer" class="studio-card reveal">
+        <div class="studio-card-img">
+          <span class="studio-surface">22</span>
+          <span class="studio-pill soon">Dispo août 2025</span>
+        </div>
+        <div class="studio-card-body">
+          <div class="studio-card-title">Studio 22 m² — Vanteaux</div>
+          <div class="studio-card-zone">Campus Vanteaux, proche Fac Lettres</div>
+          <div class="studio-card-details">
+            <span class="detail-chip">Meublé</span>
+            <span class="detail-chip">Parking</span>
+            <span class="detail-chip">Résidence</span>
+          </div>
+          <div class="studio-card-footer">
+            <div class="studio-price">395 € <span>cc/mois</span></div>
+            <div class="studio-cta">Voir l'offre →</div>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <div style="text-align:center; margin-top: 40px;">
+      <a href="https://begip.fr" target="_blank" rel="noopener noreferrer" class="btn-primary">
+        Voir tous les studios disponibles sur Begip.fr
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── CAMPUS ── -->
+<section class="campus-section" id="campus">
+  <div class="section-inner">
+    <div class="section-tag" style="color:var(--terracotta);">Bien se situer</div>
+    <h2 class="reveal">Les pôles universitaires<br />de Limoges</h2>
+    <p class="section-sub reveal">Limoges accueille plus de 20 000 étudiants répartis sur quatre campus. Begip propose des studios à proximité de chacun d'eux.</p>
+
+    <div class="campus-grid">
+      <div class="campus-card reveal">
+        <span class="campus-zone">Périphérie ouest</span>
+        <div class="campus-name">Campus La Borie</div>
+        <div class="campus-schools">Faculté des Sciences & Techniques · STAPS · IUT du Limousin · Lycées Turgot et Valadon</div>
+        <div class="campus-distance">15 min à pied depuis nos résidences</div>
+      </div>
+
+      <div class="campus-card reveal">
+        <span class="campus-zone">Périphérie sud-ouest</span>
+        <div class="campus-name">Campus Vanteaux</div>
+        <div class="campus-schools">Faculté des Lettres & Sciences Humaines · ENSA (Architecture) · Faculté de Médecine & Pharmacie (Marcland)</div>
+        <div class="campus-distance">10 min à vélo depuis nos logements</div>
+      </div>
+
+      <div class="campus-card reveal">
+        <span class="campus-zone">Centre-ville</span>
+        <div class="campus-name">Campus Centre & Jacobins</div>
+        <div class="campus-schools">Faculté de Droit & Sciences Économiques · IAE · INSPE · Écoles d'infirmières · Lycées Gay-Lussac, Beaupeyrat</div>
+        <div class="campus-distance">À pied depuis nos immeubles centre-ville</div>
+      </div>
+
+      <div class="campus-card reveal">
+        <span class="campus-zone">Technopole</span>
+        <div class="campus-name">Campus Ester Technopole</div>
+        <div class="campus-schools">ENSIL-ENSCI (École d'Ingénieurs) · 3iL (Informatique) · Entreprises high-tech</div>
+        <div class="campus-distance">Accessible en bus depuis le centre</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── APL ── -->
+<section class="apl-section" id="apl">
+  <div class="section-inner">
+    <div class="apl-grid">
+      <div class="apl-visual reveal">
+        <div class="apl-big">APL</div>
+        <div class="apl-amount">jusqu'à<br />200 €</div>
+        <div class="apl-label">d'aide mensuelle selon votre situation</div>
+      </div>
+      <div class="apl-content reveal">
+        <div class="section-tag">Aides au logement</div>
+        <h2>Réduisez votre loyer<br />grâce aux aides</h2>
+        <p class="apl-text">
+          Tous les studios gérés par Begip sont éligibles à l'Aide Personnalisée au Logement (APL) de la CAF. Le montant varie selon vos revenus et votre situation familiale — simulez votre aide avant de signer votre bail.
+        </p>
+        <p class="apl-text" style="margin-top:-24px;">
+          Si vous êtes en alternance, l'aide Mobili-Jeune d'Action Logement peut s'ajouter à l'APL.
+        </p>
+        <div class="apl-links">
+          <a href="https://www.caf.fr/allocataires/aides-et-demarches/droits-et-prestations/logement/les-aides-personnelles-au-logement" target="_blank" rel="noopener noreferrer" class="apl-link">
+            <span class="apl-link-icon">🏛️</span>
+            Simuler mon APL sur CAF.fr
+            <span class="apl-link-arrow">→</span>
+          </a>
+          <a href="https://www.actionlogement.fr/l-aide-mobili-jeune" target="_blank" rel="noopener noreferrer" class="apl-link">
+            <span class="apl-link-icon">🎓</span>
+            Aide Mobili-Jeune (alternants)
+            <span class="apl-link-arrow">→</span>
+          </a>
+          <a href="https://www.caf.fr/allocataires/caf-de-la-haute-vienne/nous-contacter/points-d-accueil-de-votre-caf" target="_blank" rel="noopener noreferrer" class="apl-link">
+            <span class="apl-link-icon">📍</span>
+            CAF de la Haute-Vienne (87)
+            <span class="apl-link-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── VIE ÉTUDIANTE ── -->
+<section class="vie-section" id="vie">
+  <div class="section-inner">
+    <div class="section-tag">Limoges, ville étudiante</div>
+    <h2 class="reveal">Bien vivre à Limoges<br />en tant qu'étudiant</h2>
+    <p class="section-sub reveal">Limoges est une ville à taille humaine, abordable et dynamique. Voici pourquoi des milliers d'étudiants y choisissent de s'installer.</p>
+
+    <div class="vie-grid">
+      <div class="vie-card reveal">
+        <span class="vie-icon">💰</span>
+        <div class="vie-title">Loyers parmi les plus bas de France</div>
+        <div class="vie-text">Le loyer moyen d'un studio à Limoges est d'environ 380 € charges comprises — bien en dessous des grandes métropoles. Idéal pour gérer son budget étudiant sereinement.</div>
+      </div>
+      <div class="vie-card reveal">
+        <span class="vie-icon">🚌</span>
+        <div class="vie-title">Transports en commun efficaces</div>
+        <div class="vie-text">Bus et trolleybus desservent tous les campus. L'abonnement annuel étudiant au réseau STCL est très abordable. Tous nos logements sont à moins de 5 min d'un arrêt.</div>
+      </div>
+      <div class="vie-card reveal">
+        <span class="vie-icon">🍕</span>
+        <div class="vie-title">Restaurants universitaires & commerces</div>
+        <div class="vie-text">Le CROUS de Limoges gère 8 restaurants universitaires. Le centre-ville regorge de commerces, boulangeries, supermarchés et restaurants à prix étudiants.</div>
+      </div>
+      <div class="vie-card reveal">
+        <span class="vie-icon">🎉</span>
+        <div class="vie-title">Vie nocturne & culturelle</div>
+        <div class="vie-text">Bars, concerts, festivals, cinémas, musées — Limoges propose une vie culturelle riche pour une ville de 200 000 habitants. Idéal après les révisions !</div>
+      </div>
+      <div class="vie-card reveal">
+        <span class="vie-icon">🌿</span>
+        <div class="vie-title">Cadre de vie agréable</div>
+        <div class="vie-text">Parcs, bords de Vienne, quartiers calmes et résidentiels — Limoges offre un cadre de vie de qualité, loin du stress des grandes métropoles.</div>
+      </div>
+      <div class="vie-card reveal">
+        <span class="vie-icon">🎓</span>
+        <div class="vie-title">20 000 étudiants, une vraie communauté</div>
+        <div class="vie-text">Associations étudiantes, clubs sportifs, événements inter-facs — l'université de Limoges est une institution à taille humaine où il fait bon étudier et vivre.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── BEGIP ── -->
+<section class="begip-section" id="begip">
+  <div class="section-inner" style="text-align:center;">
+    <div class="section-tag" style="justify-content:center; color:var(--terracotta);">Votre agence</div>
+    <h2 class="reveal">Begip, spécialiste du logement<br />étudiant à Limoges</h2>
+    <p class="begip-sub reveal">Agence immobilière limogeaude, Begip gère plus de 900 logements à Limoges — studios, appartements et résidences étudiantes. Une équipe locale, disponible et réactive.</p>
+
+    <div class="begip-stats reveal">
+      <div>
+        <div class="begip-stat-num">900+</div>
+        <div class="begip-stat-label">Logements gérés</div>
+      </div>
+      <div>
+        <div class="begip-stat-num">20+</div>
+        <div class="begip-stat-label">Ans d'expérience</div>
+      </div>
+      <div>
+        <div class="begip-stat-num">4</div>
+        <div class="begip-stat-label">Campus couverts</div>
+      </div>
+    </div>
+
+    <div class="begip-cta-group reveal">
+      <a href="https://begip.fr" target="_blank" rel="noopener noreferrer" class="btn-primary">Visiter Begip.fr</a>
+      <a href="tel:0555339750" class="btn-outline">📞 05 55 33 97 50</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<div class="contact-banner">
+  <div class="contact-inner">
+    <div class="contact-title">Un studio vous intéresse ?</div>
+    <p class="contact-sub">Contactez directement l'agence Begip pour connaître les disponibilités, organiser une visite ou déposer votre dossier.</p>
+    <div class="contact-links">
+      <a href="tel:0555339750" class="contact-link">📞 05 55 33 97 50</a>
+      <a href="mailto:agence@begip.fr" class="contact-link ghost">agence@begip.fr</a>
+      <a href="https://begip.fr" target="_blank" rel="noopener noreferrer" class="contact-link ghost">begip.fr →</a>
+    </div>
+  </div>
+</div>
+
+<!-- ── FORMULAIRE DE CONTACT ── -->
+<section style="background: var(--warm-white); padding: 96px 48px;" id="contact">
+  <div class="section-inner" style="max-width: 680px;">
+    <div class="section-tag">Contact</div>
+    <h2 class="reveal">Vous avez trouvé<br />un studio qui vous convient ?</h2>
+    <p class="section-sub reveal" style="margin-bottom: 40px;">Remplissez ce formulaire et l'agence Begip vous recontacte rapidement pour organiser une visite ou répondre à vos questions.</p>
+
+    <!-- ⚠️ Remplacer YOUR_FORM_ID par l'ID obtenu sur formspree.io/new -->
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form reveal">
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="prenom">Prénom *</label>
+          <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required />
+        </div>
+        <div class="form-group">
+          <label for="nom">Nom *</label>
+          <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" placeholder="votre@email.fr" required />
+      </div>
+
+      <div class="form-group">
+        <label for="tel">Téléphone</label>
+        <input type="tel" id="tel" name="telephone" placeholder="06 xx xx xx xx" />
+      </div>
+
+      <div class="form-group">
+        <label for="ecole">Votre école / faculté</label>
+        <select id="ecole" name="ecole">
+          <option value="">Sélectionnez votre établissement</option>
+          <optgroup label="Campus La Borie">
+            <option>Fac des Sciences & Techniques</option>
+            <option>IUT du Limousin</option>
+            <option>STAPS</option>
+          </optgroup>
+          <optgroup label="Campus Vanteaux">
+            <option>Fac des Lettres & Sciences Humaines</option>
+            <option>ENSA (Architecture)</option>
+          </optgroup>
+          <optgroup label="Campus Marcland">
+            <option>Fac de Médecine</option>
+            <option>Fac de Pharmacie</option>
+          </optgroup>
+          <optgroup label="Centre-ville">
+            <option>Fac de Droit & Sciences Éco</option>
+            <option>IAE</option>
+            <option>École d'infirmières</option>
+            <option>Lycée (BTS / CPGE)</option>
+          </optgroup>
+          <optgroup label="Ester Technopole">
+            <option>ENSIL-ENSCI</option>
+            <option>3iL</option>
+          </optgroup>
+          <option value="autre">Autre</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="dispo">Date d'emménagement souhaitée</label>
+        <input type="month" id="dispo" name="disponibilite" />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Votre message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Précisez vos besoins : surface souhaitée, budget, questions particulières..."></textarea>
+      </div>
+
+      <!-- Champ anti-spam honeypot -->
+      <input type="text" name="_gotcha" style="display:none" />
+      <!-- Email de destination (Formspree) -->
+      <input type="hidden" name="_replyto" value="agence@begip.fr" />
+      <input type="hidden" name="_subject" value="Nouvelle demande studio — Studio-Limoges.fr" />
+
+      <button type="submit" class="form-submit">
+        Envoyer ma demande →
+      </button>
+
+      <p class="form-legal">Vos données sont transmises uniquement à l'agence Begip et ne sont pas partagées à des tiers. Conformément au RGPD, vous disposez d'un droit d'accès et de suppression en contactant agence@begip.fr.</p>
+    </form>
+  </div>
+</section>
+
+<style>
+  .contact-form { display: flex; flex-direction: column; gap: 20px; }
+
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+  .form-group { display: flex; flex-direction: column; gap: 7px; }
+
+  .form-group label {
+    font-family: 'Syne', sans-serif; font-size: .8rem;
+    font-weight: 600; color: var(--dark); letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    padding: 13px 16px;
+    font-family: 'Literata', serif; font-size: .95rem;
+    color: var(--text); background: #fff;
+    transition: border-color .2s, box-shadow .2s;
+    outline: none;
+    width: 100%;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: var(--terracotta);
+    box-shadow: 0 0 0 3px rgba(196,98,45,.12);
+  }
+
+  .form-group textarea { resize: vertical; min-height: 100px; }
+
+  .form-submit {
+    background: var(--terracotta);
+    color: #fff; border: none;
+    padding: 16px 36px; border-radius: 50px;
+    font-family: 'Syne', sans-serif; font-weight: 700; font-size: .95rem;
+    cursor: pointer; letter-spacing: .04em;
+    transition: background .2s, transform .15s, box-shadow .2s;
+    align-self: flex-start;
+    box-shadow: 0 4px 20px rgba(196,98,45,.3);
+  }
+  .form-submit:hover {
+    background: var(--terracotta-light);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(196,98,45,.4);
+  }
+
+  .form-legal {
+    font-size: .75rem; color: var(--muted); line-height: 1.6;
+    font-style: italic;
+  }
+
+  @media (max-width: 560px) {
+    .form-row { grid-template-columns: 1fr; }
+    .form-submit { width: 100%; text-align: center; }
+  }
+</style>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-inner">
+    <a href="/" class="footer-logo">Studio-Limoges.fr</a>
+    <div class="footer-links">
+      <a href="#studios">Studios</a>
+      <a href="#campus">Campus</a>
+      <a href="#apl">APL</a>
+      <a href="#vie">Vie étudiante</a>
+      <a href="https://begip.fr" target="_blank" rel="noopener noreferrer">Begip.fr</a>
+      <a href="#">Mentions légales</a>
+    </div>
+    <div class="footer-copy">© 2025 Studio-Limoges.fr — Un site du réseau Begip Limoges</div>
+  </div>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        entry.target.style.transitionDelay = (i % 3) * 100 + 'ms';
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
