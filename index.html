@@ -6,10 +6,11 @@
 
   <!-- SEO -->
   <title>Studio à Louer à Limoges – Location Studio Étudiant 87 | Studio-Limoges.fr</title>
-  <meta name="description" content="Trouvez votre studio à louer à Limoges : studios meublés pour étudiants près des facultés, centre-ville, quartier Borie. Éligibles APL. Gérés par l'agence Begip, spécialiste du logement étudiant à Limoges depuis plus de 20 ans." />
+  <meta name="description" content="Trouvez votre studio à louer à Limoges : studios vides ou avec mise à disposition de meubles, pour étudiants près des facultés et en centre-ville. Éligibles APL ou ALS. Frais d'agence réduits étudiants. Gérés par Begip depuis plus de 20 ans." />
   <meta name="keywords" content="studio louer Limoges, studio étudiant Limoges, studio meublé Limoges 87, location studio Limoges, studio Borie Limoges, studio centre-ville Limoges, APL Limoges" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://studio-limoges.fr/" />
+  <meta name="google-site-verification" content="1wh36ZaBDl6-GhCvDUWRvSnvzLbyttYL-gC-8zGPTUc" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Studio à Louer à Limoges – Begip" />
@@ -255,6 +256,24 @@
       max-width: 520px; margin-bottom: 56px;
     }
 
+    /* ── TYPES DE LOCATION ── */
+    .types-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+      margin-bottom: 48px;
+    }
+    .type-card {
+      background: #fff; border: 2px solid var(--border);
+      border-radius: var(--radius); padding: 28px;
+      transition: border-color .2s, transform .2s;
+    }
+    .type-card:hover { border-color: var(--terracotta); transform: translateY(-3px); }
+    .type-icon { font-size: 2rem; display: block; margin-bottom: 12px; }
+    .type-title {
+      font-family: 'Syne', sans-serif; font-weight: 700;
+      font-size: 1rem; color: var(--dark); margin-bottom: 8px;
+    }
+    .type-desc { font-size: .88rem; color: var(--muted); line-height: 1.6; }
+
     /* ── STUDIOS GRID ── */
     .studios-section { background: var(--warm-white); }
 
@@ -388,6 +407,76 @@
       display: flex; align-items: center; gap: 6px;
     }
     .campus-distance::before { content: '🚶'; }
+
+    /* ── RÉSIDENCES CARDS ── */
+    .res-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+
+    .res-card {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 20px; overflow: hidden;
+      transition: transform .25s, border-color .25s;
+    }
+    .res-card:hover { transform: translateY(-6px); border-color: rgba(196,98,45,.4); }
+
+    .res-card-header {
+      padding: 32px 28px; position: relative; overflow: hidden;
+      display: flex; align-items: center; gap: 20px;
+      background: linear-gradient(135deg, #2d1f1a 0%, #1a1412 100%);
+    }
+    .res-card-header::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 80% 20%, rgba(196,98,45,.25) 0%, transparent 70%);
+    }
+    .res-card-num {
+      font-family: 'Syne', sans-serif; font-weight: 900;
+      font-size: 3rem; color: rgba(255,255,255,.15);
+      flex-shrink: 0; position: relative; z-index: 1;
+    }
+    .res-card-header-content { position: relative; z-index: 1; }
+    .res-card-tag {
+      font-family: 'Syne', sans-serif; font-size: .68rem;
+      text-transform: uppercase; letter-spacing: .12em;
+      color: var(--terracotta); margin-bottom: 6px;
+    }
+    .res-card-name {
+      font-family: 'Syne', sans-serif; font-weight: 800;
+      font-size: 1.3rem; color: #fff; margin-bottom: 4px;
+    }
+    .res-card-loc { font-size: .8rem; color: rgba(255,255,255,.5); }
+
+    .res-card-body { padding: 24px 28px; }
+    .res-card-desc { font-size: .9rem; color: rgba(255,255,255,.6); line-height: 1.65; margin-bottom: 20px; }
+
+    .res-services { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+    .res-service {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.08);
+      color: rgba(255,255,255,.65);
+      font-family: 'Syne', sans-serif; font-size: .72rem;
+      padding: 5px 12px; border-radius: 50px;
+    }
+
+    .res-cta {
+      display: inline-flex; align-items: center;
+      background: var(--terracotta); color: #fff;
+      padding: 12px 24px; border-radius: 50px;
+      font-family: 'Syne', sans-serif; font-size: .82rem; font-weight: 600;
+      text-decoration: none; letter-spacing: .04em;
+      transition: background .2s, transform .15s;
+    }
+    .res-cta:hover { background: var(--terracotta-light); transform: translateY(-2px); }
+
+    @media (max-width: 760px) { .res-grid { grid-template-columns: 1fr; } }
+
+    /* ── AIDES CARDS ── */
+    .aides-cards { display: flex; flex-direction: column; gap: 12px; margin-bottom: 16px; }
+    .aide-card {
+      background: #fff; border-radius: 10px; padding: 16px 20px;
+      border-left: 4px solid var(--terracotta);
+    }
+    .aide-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: .9rem; color: var(--dark); margin-bottom: 6px; }
+    .aide-desc { font-size: .84rem; color: var(--muted); line-height: 1.55; }
 
     /* ── APL SECTION ── */
     .apl-section { background: var(--terracotta-pale); }
@@ -585,8 +674,9 @@
   <a href="/" class="nav-logo">Studio<span>-Limoges.fr</span></a>
   <div class="nav-right">
     <a href="#studios" class="nav-link">Studios disponibles</a>
+    <a href="#residences" class="nav-link">Résidences</a>
     <a href="#campus" class="nav-link">Campus</a>
-    <a href="#apl" class="nav-link">APL</a>
+    <a href="#aides" class="nav-link">Aides</a>
     <a href="https://begip.fr" target="_blank" rel="noopener noreferrer" class="nav-link nav-cta">Contacter Begip</a>
   </div>
 </nav>
@@ -597,15 +687,16 @@
     <div class="hero-tag">Location de studios — Limoges 87</div>
     <h1>Votre studio<br />à <em>Limoges</em>,<br />sans stress</h1>
     <p class="hero-desc">
-      Studios meublés pour étudiants, proches de toutes les facultés de Limoges. Gérés par Begip, spécialiste du logement étudiant depuis plus de 20 ans.
+      Studios vides ou avec mise à disposition de meubles, pour étudiants, proches de toutes les facultés de Limoges. Frais d'agence réduits réservés aux étudiants. Gérés par Begip, agence limougeaude spécialiste du logement étudiant depuis plus de 20 ans.
     </p>
     <div class="hero-actions">
       <a href="#studios" class="btn-primary">Voir les studios</a>
       <a href="https://begip.fr" target="_blank" rel="noopener noreferrer" class="btn-ghost">Begip.fr →</a>
     </div>
     <div class="hero-badges">
-      <span class="badge gold">Éligible APL</span>
-      <span class="badge">Meublés & équipés</span>
+      <span class="badge gold">APL ou ALS selon logement</span>
+      <span class="badge">Studios vides ou meublés</span>
+      <span class="badge">Frais d'agence réduits étudiants</span>
       <span class="badge">900 logements à Limoges</span>
     </div>
   </div>
@@ -618,13 +709,13 @@
 
       <div class="feature-list">
         <div class="feature-item">
-          <span class="feature-icon">🛋️</span>
-          <span class="feature-text">Entièrement meublé et équipé</span>
+          <span class="feature-icon">🏠</span>
+          <span class="feature-text">Studios vides ou avec mise à disposition de meubles</span>
           <span class="feature-check">✓</span>
         </div>
         <div class="feature-item">
-          <span class="feature-icon">📶</span>
-          <span class="feature-text">WiFi haut débit inclus</span>
+          <span class="feature-icon">💶</span>
+          <span class="feature-text">Frais d'agence réduits étudiants : 130 € seulement</span>
           <span class="feature-check">✓</span>
         </div>
         <div class="feature-item">
@@ -633,8 +724,13 @@
           <span class="feature-check">✓</span>
         </div>
         <div class="feature-item">
-          <span class="feature-icon">💶</span>
-          <span class="feature-text">Éligible APL — aide CAF</span>
+          <span class="feature-icon">💰</span>
+          <span class="feature-text">APL ou ALS selon le logement</span>
+          <span class="feature-check">✓</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🔧</span>
+          <span class="feature-text">Maintenance rapide via Home Service</span>
           <span class="feature-check">✓</span>
         </div>
         <div class="feature-item">
@@ -651,8 +747,22 @@
 <section class="studios-section" id="studios">
   <div class="section-inner">
     <div class="section-tag">Nos studios</div>
-    <h2 class="reveal">Studios actuellement<br />disponibles à Limoges</h2>
-    <p class="section-sub reveal">Des logements meublés, prêts à vivre, dans les quartiers les mieux situés pour vos études. Contactez Begip pour connaître les disponibilités en temps réel.</p>
+    <h2 class="reveal">Studios vides ou meublés<br />à Limoges</h2>
+    <p class="section-sub reveal">Begip propose deux formules : studios vides (vous apportez vos meubles) ou avec mise à disposition de meubles. Dans tous les cas, contactez Begip pour connaître les disponibilités en temps réel.</p>
+
+    <!-- Bandeau types de location -->
+    <div class="types-grid reveal">
+      <div class="type-card">
+        <span class="type-icon">🏠</span>
+        <div class="type-title">Studio vide</div>
+        <div class="type-desc">Vous aménagez à votre goût. Idéal si vous avez déjà des meubles ou souhaitez personnaliser votre intérieur. Loyer généralement plus bas.</div>
+      </div>
+      <div class="type-card">
+        <span class="type-icon">🛋️</span>
+        <div class="type-title">Studio avec mise à disposition de meubles</div>
+        <div class="type-desc">Le logement est équipé (lit, bureau, rangements, cuisine équipée). Idéal pour une installation rapide sans investissement mobilier.</div>
+      </div>
+    </div>
 
     <div class="studios-grid">
 
@@ -737,8 +847,11 @@
       <div class="campus-card reveal">
         <span class="campus-zone">Périphérie ouest</span>
         <div class="campus-name">Campus La Borie</div>
-        <div class="campus-schools">Faculté des Sciences & Techniques · STAPS · IUT du Limousin · Lycées Turgot et Valadon</div>
+        <div class="campus-schools">Faculté des Sciences & Techniques · <strong style="color:var(--terracotta-light)">IUT du Limousin</strong> · STAPS · Lycées Turgot et Valadon</div>
         <div class="campus-distance">15 min à pied depuis nos résidences</div>
+        <div style="margin-top:12px; padding:10px 14px; background:rgba(196,98,45,.15); border-radius:8px; font-size:.8rem; color:var(--terracotta-light);">
+          🏢 La résidence <strong>University Dutreix</strong> est à quelques minutes à pied de l'IUT — <a href="https://university-dutreix.fr" target="_blank" rel="noopener noreferrer" style="color:var(--terracotta-light); text-decoration:underline;">voir la résidence</a>
+        </div>
       </div>
 
       <div class="campus-card reveal">
@@ -765,28 +878,41 @@
   </div>
 </section>
 
-<!-- ── APL ── -->
-<section class="apl-section" id="apl">
+<!-- ── AIDES AU LOGEMENT ── -->
+<section class="apl-section" id="aides">
   <div class="section-inner">
     <div class="apl-grid">
       <div class="apl-visual reveal">
-        <div class="apl-big">APL</div>
+        <div class="apl-big">APL<br/>ALS</div>
         <div class="apl-amount">jusqu'à<br />200 €</div>
         <div class="apl-label">d'aide mensuelle selon votre situation</div>
       </div>
       <div class="apl-content reveal">
         <div class="section-tag">Aides au logement</div>
-        <h2>Réduisez votre loyer<br />grâce aux aides</h2>
+        <h2>Deux aides possibles<br />selon votre logement</h2>
         <p class="apl-text">
-          Tous les studios gérés par Begip sont éligibles à l'Aide Personnalisée au Logement (APL) de la CAF. Le montant varie selon vos revenus et votre situation familiale — simulez votre aide avant de signer votre bail.
+          Selon le studio que vous louez, vous pouvez bénéficier de l'une ou l'autre de ces aides de la CAF :
         </p>
-        <p class="apl-text" style="margin-top:-24px;">
-          Si vous êtes en alternance, l'aide Mobili-Jeune d'Action Logement peut s'ajouter à l'APL.
+        <div class="aides-cards">
+          <div class="aide-card">
+            <div class="aide-title">🏛️ APL — Aide Personnalisée au Logement</div>
+            <div class="aide-desc">Applicable sur certains logements conventionnés. Le montant dépend de vos revenus et de la composition de votre foyer.</div>
+          </div>
+          <div class="aide-card">
+            <div class="aide-title">🏠 ALS — Allocation de Logement Social</div>
+            <div class="aide-desc">Pour les logements non conventionnés. Accessible à tous les étudiants, sous conditions de ressources. Souvent équivalente à l'APL.</div>
+          </div>
+        </div>
+        <p class="apl-text" style="margin-top: 16px; font-weight: 500; color: var(--terracotta);">
+          💼 L'équipe Begip vous accompagne dans la constitution de votre dossier d'aide au logement. N'hésitez pas à nous contacter !
+        </p>
+        <p class="apl-text">
+          Les alternants peuvent également bénéficier de l'aide Mobili-Jeune d'Action Logement, cumulable avec l'APL ou l'ALS.
         </p>
         <div class="apl-links">
           <a href="https://www.caf.fr/allocataires/aides-et-demarches/droits-et-prestations/logement/les-aides-personnelles-au-logement" target="_blank" rel="noopener noreferrer" class="apl-link">
             <span class="apl-link-icon">🏛️</span>
-            Simuler mon APL sur CAF.fr
+            Simuler mon APL / ALS sur CAF.fr
             <span class="apl-link-arrow">→</span>
           </a>
           <a href="https://www.actionlogement.fr/l-aide-mobili-jeune" target="_blank" rel="noopener noreferrer" class="apl-link">
@@ -829,6 +955,16 @@
         <div class="vie-text">Le CROUS de Limoges gère 8 restaurants universitaires. Le centre-ville regorge de commerces, boulangeries, supermarchés et restaurants à prix étudiants.</div>
       </div>
       <div class="vie-card reveal">
+        <span class="vie-icon">💶</span>
+        <div class="vie-title">Frais d'agence réduits étudiants : 130 €</div>
+        <div class="vie-text">Begip applique des frais d'agence réduits réservés aux étudiants : seulement 130 € pour l'ensemble du dossier (dont état des lieux). Un avantage concret qui allège votre budget d'installation.</div>
+      </div>
+      <div class="vie-card reveal">
+        <span class="vie-icon">🔧</span>
+        <div class="vie-title">Maintenance rapide via Home Service</div>
+        <div class="vie-text">Begip s'appuie sur Home Service (entreprise multi-services) et des artisans locaux compétents pour intervenir rapidement en cas de besoin : chasses d'eau, serrures, siphons, poignées de portes... Votre confort est notre priorité.</div>
+      </div>
+      <div class="vie-card reveal">
         <span class="vie-icon">🎉</span>
         <div class="vie-title">Vie nocturne & culturelle</div>
         <div class="vie-text">Bars, concerts, festivals, cinémas, musées — Limoges propose une vie culturelle riche pour une ville de 200 000 habitants. Idéal après les révisions !</div>
@@ -843,6 +979,16 @@
         <div class="vie-title">20 000 étudiants, une vraie communauté</div>
         <div class="vie-text">Associations étudiantes, clubs sportifs, événements inter-facs — l'université de Limoges est une institution à taille humaine où il fait bon étudier et vivre.</div>
       </div>
+      <div class="vie-card reveal">
+        <span class="vie-icon">🚄</span>
+        <div class="vie-title">Limoges, très bien desservie</div>
+        <div class="vie-text">Accessible par l'autoroute A20 (Paris–Toulouse), par le train depuis la magnifique gare des Bénédictins (Paris en 3h environ), et par avion via l'aéroport international de Limoges-Bellegarde. Idéal pour rentrer chez soi le week-end !</div>
+      </div>
+      <div class="vie-card reveal">
+        <span class="vie-icon">🌲</span>
+        <div class="vie-title">Un environnement naturel exceptionnel</div>
+        <div class="vie-text">À deux pas de Limoges, une campagne magnifique vous attend : forêts, lacs, chemins de randonnée, balades à vélo, trails, sports nautiques sur le lac de Vassivière... Un cadre de vie rare pour une ville universitaire.</div>
+      </div>
     </div>
   </div>
 </section>
@@ -852,7 +998,7 @@
   <div class="section-inner" style="text-align:center;">
     <div class="section-tag" style="justify-content:center; color:var(--terracotta);">Votre agence</div>
     <h2 class="reveal">Begip, spécialiste du logement<br />étudiant à Limoges</h2>
-    <p class="begip-sub reveal">Agence immobilière limogeaude, Begip gère plus de 900 logements à Limoges — studios, appartements et résidences étudiantes. Une équipe locale, disponible et réactive.</p>
+    <p class="begip-sub reveal">Agence immobilière Limougeaude, Begip gère plus de 900 logements à Limoges — studios, appartements, maisons et résidences étudiantes. Une équipe locale, disponible et réactive.</p>
 
     <div class="begip-stats reveal">
       <div>
@@ -888,6 +1034,75 @@
     </div>
   </div>
 </div>
+
+<!-- ── RÉSIDENCES ÉTUDIANTES ── -->
+<section style="background: var(--dark); padding: 96px 48px;" id="residences">
+  <div class="section-inner">
+    <div class="section-tag" style="color:var(--terracotta);">Résidences étudiantes</div>
+    <h2 class="reveal" style="color:#fff;">Deux résidences gérées<br />à 100 % par Begip</h2>
+    <p class="section-sub reveal" style="color:rgba(255,255,255,.5); margin-bottom:48px;">
+      En plus des studios en immeubles, Begip gère deux résidences étudiantes entièrement dédiées aux étudiants, avec de nombreux services inclus.
+    </p>
+
+    <div class="res-grid">
+
+      <!-- Meissonier -->
+      <div class="res-card reveal">
+        <div class="res-card-header meissonier">
+          <div class="res-card-num">205</div>
+          <div class="res-card-header-content">
+            <div class="res-card-tag">Résidence étudiante</div>
+            <div class="res-card-name">University Meissonier</div>
+            <div class="res-card-loc">📍 Quartier La Borie — Limoges ouest</div>
+          </div>
+        </div>
+        <div class="res-card-body">
+          <p class="res-card-desc">Résidence de 205 appartements (studios, T2, T3) idéalement située entre la faculté des Sciences, l'IUT et le centre-ville. Nombreux espaces communs pensés pour le bien-être des étudiants.</p>
+          <div class="res-services">
+            <span class="res-service">💪 Salle de sport gratuite</span>
+            <span class="res-service">📶 WiFi inclus</span>
+            <span class="res-service">🎱 Babyfoot Bonzini</span>
+            <span class="res-service">👕 Laverie automatique</span>
+            <span class="res-service">🚲 Local vélo sécurisé</span>
+            <span class="res-service">📚 Salle de travail</span>
+            <span class="res-service">🌿 Terrasse & espaces verts</span>
+            <span class="res-service">🚗 Parking sécurisé</span>
+          </div>
+          <a href="https://university-meissonier.fr" target="_blank" rel="noopener noreferrer" class="res-cta">
+            Voir la résidence University Meissonier →
+          </a>
+        </div>
+      </div>
+
+      <!-- Dutreix -->
+      <div class="res-card reveal">
+        <div class="res-card-header dutreix">
+          <div class="res-card-num">★</div>
+          <div class="res-card-header-content">
+            <div class="res-card-tag">Résidence étudiante</div>
+            <div class="res-card-name">University Dutreix</div>
+            <div class="res-card-loc">📍 Proche IUT & Fac des Sciences</div>
+          </div>
+        </div>
+        <div class="res-card-body">
+          <p class="res-card-desc">Résidence étudiante à quelques minutes à pied seulement de l'IUT du Limousin et de la faculté des Sciences. Des logements meublés de qualité, avec services sur place.</p>
+          <div class="res-services">
+            <span class="res-service">🎓 À 5 min de l'IUT à pied</span>
+            <span class="res-service">🛋️ Logements meublés</span>
+            <span class="res-service">👕 Laverie sur place</span>
+            <span class="res-service">🚗 Parking disponible</span>
+            <span class="res-service">🔐 Accès sécurisé</span>
+            <span class="res-service">📶 Services sur place</span>
+          </div>
+          <a href="https://university-dutreix.fr" target="_blank" rel="noopener noreferrer" class="res-cta">
+            Voir la résidence University Dutreix →
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 <!-- ── FORMULAIRE DE CONTACT ── -->
 <section style="background: var(--warm-white); padding: 96px 48px;" id="contact">
