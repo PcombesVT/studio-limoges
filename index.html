@@ -1374,7 +1374,7 @@
     <h2 class="reveal">Vous avez trouvé<br />un studio qui vous convient ?</h2>
     <p class="section-sub reveal" style="margin-bottom: 40px;">Remplissez ce formulaire et l'agence Begip vous recontacte rapidement pour organiser une visite ou répondre à vos questions.</p>
 
-    <form action="https://formspree.io/f/xlgagzpy" method="POST" class="contact-form reveal">
+    <form action="https://formspree.io/f/xlgagzpy" method="POST" class="contact-form reveal" id="studioForm">
 
       <div class="form-row">
         <div class="form-group">
@@ -1444,6 +1444,7 @@
       </div>
       <!-- Email de destination (Formspree) -->
       <input type="hidden" name="_subject" value="Nouvelle demande studio — Studio-Limoges.fr" />
+      <input type="hidden" name="source_site" value="studio-limoges.fr" />
 
       <button type="submit" class="form-submit">
         Envoyer ma demande →
@@ -1585,6 +1586,19 @@
       closeMenu();
     }
   });
+
+  // ── Double envoi : Formspree (email) + Google Sheets (BDD) ──
+  const APPS_SCRIPT_URL = 'COLLER_ICI_URL_APPS_SCRIPT';
+  const studioForm = document.getElementById('studioForm');
+  if (studioForm && APPS_SCRIPT_URL !== 'COLLER_ICI_URL_APPS_SCRIPT') {
+    studioForm.addEventListener('submit', function() {
+      const formData = new FormData(studioForm);
+      fetch(APPS_SCRIPT_URL, {
+        method: 'POST',
+        body: formData
+      }).catch(() => {}); // silencieux si échec
+    });
+  }
 </script>
 
 </body>
