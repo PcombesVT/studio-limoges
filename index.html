@@ -1590,13 +1590,15 @@
   // ── Double envoi : Formspree (email) + Google Sheets (BDD) ──
   const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxs8YesW21u5Y-wuUlg5-GoiTprz-B7OV33iBTIZzgua6QhjQZf7yw0AobsjGeTg-nyaw/exec';
   const studioForm = document.getElementById('studioForm');
-  if (studioForm && APPS_SCRIPT_URL !== 'https://script.google.com/macros/s/AKfycbxs8YesW21u5Y-wuUlg5-GoiTprz-B7OV33iBTIZzgua6QhjQZf7yw0AobsjGeTg-nyaw/exec') {
+  if (studioForm) {
     studioForm.addEventListener('submit', function() {
       const formData = new FormData(studioForm);
+      const encoded = new URLSearchParams(formData).toString();
       fetch(APPS_SCRIPT_URL, {
         method: 'POST',
-        body: formData
-      }).catch(() => {}); // silencieux si échec
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encoded
+      }).catch(() => {});
     });
   }
 </script>
