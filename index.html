@@ -1588,9 +1588,9 @@
   });
 
   // ── Double envoi : Formspree (email) + Google Sheets (BDD) ──
-  const APPS_SCRIPT_URL = 'COLLER_ICI_URL_APPS_SCRIPT';
+  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxs8YesW21u5Y-wuUlg5-GoiTprz-B7OV33iBTIZzgua6QhjQZf7yw0AobsjGeTg-nyaw/exec';
   const studioForm = document.getElementById('studioForm');
-  if (studioForm && APPS_SCRIPT_URL !== 'COLLER_ICI_URL_APPS_SCRIPT') {
+  if (studioForm && APPS_SCRIPT_URL !== 'https://script.google.com/macros/s/AKfycbxs8YesW21u5Y-wuUlg5-GoiTprz-B7OV33iBTIZzgua6QhjQZf7yw0AobsjGeTg-nyaw/exec') {
     studioForm.addEventListener('submit', function() {
       const formData = new FormData(studioForm);
       fetch(APPS_SCRIPT_URL, {
