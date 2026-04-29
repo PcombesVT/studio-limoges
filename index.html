@@ -795,6 +795,12 @@
       opacity: 0; transform: translateY(28px);
       transition: opacity .7s ease, transform .7s ease;
     }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* Fallback si JS désactivé ou lent */
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1; transform: none; }
+    }
     .reveal.visible { opacity: 1; transform: translateY(0); }
 
     /* ── RESPONSIVE ── */
@@ -923,7 +929,7 @@
     <div class="hero-tag">Location de studios — Limoges 87</div>
     <h1>Votre studio<br />à <em>Limoges</em>,<br />sans stress</h1>
     <p class="hero-desc">
-      Studios vides ou avec mise à disposition de meubles, pour étudiants, proches de toutes les facultés de Limoges. Frais d'agence réduits réservés aux étudiants. Gérés par Begip, agence limougeaude spécialiste du logement étudiant depuis plus de 30 ans.
+      Studios vides ou avec mise à disposition de meubles, pour étudiants, proches de toutes les facultés de Limoges (Médecine, Pharmacie, Sciences, Lettres) et en centre-ville (Fac de Droit, école d'infirmières, etc.). Frais d'agence réduits réservés aux étudiants. Gérés par Begip, agence limougeaude spécialiste du logement étudiant depuis plus de 30 ans.
     </p>
     <div class="hero-actions">
       <a href="#studios" class="btn-primary">Voir les studios</a>
@@ -940,7 +946,7 @@
   <div class="hero-right">
     <div class="price-showcase">
       <div class="price-label">Studios disponibles à partir de</div>
-      <div class="price-range"><span>350</span> €</div>
+      <div class="price-range"><span>280</span> €</div>
       <div class="price-sub">charges comprises / mois — hors APL</div>
 
       <div class="feature-list">
@@ -1097,7 +1103,7 @@
       <div class="campus-card reveal">
         <span class="campus-zone">Périphérie sud-ouest</span>
         <div class="campus-name">Campus Vanteaux</div>
-        <div class="campus-schools">Faculté des Lettres & Sciences Humaines · ENSA (Architecture) · Faculté de Médecine & Pharmacie (Marcland)</div>
+        <div class="campus-schools">Faculté des Lettres & Sciences Humaines · ENSA (Architecture) · Faculté de Médecine & Pharmacie (Marcland) · IFSI — École d'Infirmières du CHU</div>
         <div class="campus-distance">10 min à vélo depuis nos logements</div>
         <div style="margin-top:12px; padding:10px 14px; background:rgba(196,98,45,.15); border-radius:8px; font-size:.8rem; color:var(--terracotta-light);">
           🌿 Quartier verdoyant et résidentiel — <a href="https://www.vanteaux-limoges.fr/" target="_blank" rel="noopener noreferrer" style="color:var(--terracotta-light); text-decoration:underline;">guide du quartier de Vanteaux</a>
@@ -1179,7 +1185,7 @@
   <div class="section-inner">
     <div class="section-tag">Limoges, ville étudiante</div>
     <h2 class="reveal">Bien vivre à Limoges<br />en tant qu'étudiant</h2>
-    <p class="section-sub reveal">Limoges est une ville à taille humaine, abordable et dynamique. Voici pourquoi des milliers d'étudiants y choisissent de s'installer.</p>
+    <p class="section-sub reveal">Limoges est une ville à taille humaine, abordable et dynamique. Voici pourquoi des milliers d'étudiants choisissent de s'y installer.</p>
 
     <div class="vie-grid">
       <div class="vie-card reveal">
@@ -1306,7 +1312,7 @@
           </div>
         </div>
         <div class="res-card-body">
-          <p class="res-card-desc">Résidence de 205 appartements (studios, T2, T3) idéalement située entre la faculté des Sciences, l'IUT et le centre-ville. Nombreux espaces communs pensés pour le bien-être des étudiants.</p>
+          <p class="res-card-desc">Résidence de 205 logements (studios et T3, tous avec mise à disposition de meubles) idéalement située entre la faculté des Sciences, l'IUT et le centre-ville. Nombreux espaces communs pensés pour le bien-être des étudiants.</p>
           <div class="res-services">
             <span class="res-service">💪 Salle de sport gratuite</span>
             <span class="res-service">📶 WiFi inclus</span>
@@ -1316,6 +1322,7 @@
             <span class="res-service">📚 Salle de travail</span>
             <span class="res-service">🌿 Terrasse & espaces verts</span>
             <span class="res-service">🚗 Parking sécurisé</span>
+            <span class="res-service">🛋️ Mise à disposition de meubles incluse pour tous les logements</span>
           </div>
           <a href="https://university-meissonier.fr" target="_blank" rel="noopener noreferrer" class="res-cta">
             Voir la résidence University Meissonier →
@@ -1337,7 +1344,7 @@
           <p class="res-card-desc">Résidence étudiante à quelques minutes à pied seulement de l'IUT du Limousin et de la faculté des Sciences. Des logements de qualité vides ou avec mise à disposition de meubles, avec services sur place.</p>
           <div class="res-services">
             <span class="res-service">🎓 À 5 min de l'IUT à pied</span>
-            <span class="res-service">🏠 Vide ou mise à disposition meubles</span>
+            <span class="res-service">🏠 Logements vides ou avec mise à disposition de meubles pour certains</span>
             <span class="res-service">👕 Laverie sur place</span>
             <span class="res-service">🚗 Parking disponible</span>
             <span class="res-service">🔐 Accès sécurisé</span>
@@ -1526,6 +1533,7 @@
 </footer>
 
 <script>
+  // Déclencher immédiatement les éléments déjà dans le viewport au chargement
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
@@ -1535,8 +1543,21 @@
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.05, rootMargin: '0px 0px -10px 0px' });
+
   reveals.forEach(el => observer.observe(el));
+
+  // Fallback : forcer la visibilité après 300ms si l'observer ne s'est pas déclenché
+  setTimeout(() => {
+    reveals.forEach(el => {
+      if (!el.classList.contains('visible')) {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+          el.classList.add('visible');
+        }
+      }
+    });
+  }, 300);
 
   // Hamburger menu
   const hamburger = document.getElementById('hamburger');
