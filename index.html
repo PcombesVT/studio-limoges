@@ -1450,6 +1450,12 @@
         Envoyer ma demande →
       </button>
 
+      <div id="studioConfirmation" style="display:none; margin-top:20px; padding:20px 24px; background:rgba(74,156,74,.12); border:1px solid rgba(74,156,74,.35); border-left:4px solid #4a9c4a; border-radius:10px; color:var(--cream);">
+        <strong style="display:block; margin-bottom:8px; font-size:1.05rem;">✓ Votre demande a bien été envoyée !</strong>
+        L'équipe Begip vous recontactera dans les meilleurs délais, du lundi au vendredi de 8h30 à 18h00.<br>
+        Pour toute urgence : <a href="tel:0555339750" style="color:var(--terracotta); font-weight:600;">05 55 33 97 50</a> — <a href="mailto:agence@begip.fr" style="color:var(--terracotta); font-weight:600;">agence@begip.fr</a>
+      </div>
+
       <p class="form-legal">Vos données sont transmises uniquement à l'agence Begip et ne sont pas partagées à des tiers. Conformément au RGPD, vous disposez d'un droit d'accès et de suppression en contactant agence@begip.fr.</p>
     </form>
   </div>
@@ -1591,14 +1597,29 @@
   const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxs8YesW21u5Y-wuUlg5-GoiTprz-B7OV33iBTIZzgua6QhjQZf7yw0AobsjGeTg-nyaw/exec';
   const studioForm = document.getElementById('studioForm');
   if (studioForm) {
-    studioForm.addEventListener('submit', function() {
+    studioForm.addEventListener('submit', function(e) {
+      e.preventDefault();
       const formData = new FormData(studioForm);
       const encoded = new URLSearchParams(formData).toString();
+
+      // Envoi Formspree
+      fetch('https://formspree.io/f/xlgagzpy', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json', 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encoded
+      }).catch(() => {});
+
+      // Envoi Google Sheets
+      const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxs8YesW21u5Y-wuUlg5-GoiTprz-B7OV33iBTIZzgua6QhjQZf7yw0AobsjGeTg-nyaw/exec';
       fetch(APPS_SCRIPT_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: encoded
       }).catch(() => {});
+
+      // Afficher confirmation et masquer le formulaire
+      studioForm.style.display = 'none';
+      document.getElementById('studioConfirmation').style.display = 'block';
     });
   }
 </script>
