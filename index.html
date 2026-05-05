@@ -430,7 +430,7 @@
     .studios-section { background: var(--warm-white); }
 
     .studios-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
     }
 
     .studio-card {
@@ -452,6 +452,8 @@
     .studio-card-img {
       height: 200px;
       background: linear-gradient(135deg, var(--dark-mid) 0%, var(--dark) 100%);
+      background-size: cover;
+      background-position: center;
       position: relative; overflow: hidden;
       display: flex; align-items: flex-end;
       padding: 20px;
@@ -459,7 +461,7 @@
     .studio-card-img::before {
       content: '';
       position: absolute; inset: 0;
-      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(196,98,45,.2) 0%, transparent 70%);
+      background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,.5) 100%);
     }
     .studio-surface {
       font-family: 'Syne', sans-serif; font-weight: 800;
@@ -1019,71 +1021,90 @@
 
     <div class="studios-grid">
 
-      <a href="https://begip.fr" target="_blank" rel="noopener noreferrer" class="studio-card reveal">
-        <div class="studio-card-img">
-          <span class="studio-surface">18</span>
+      <div class="studio-card reveal">
+        <div class="studio-card-img" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url('photos/studio-16M12.jpg');">
           <span class="studio-pill available">Disponible</span>
         </div>
         <div class="studio-card-body">
-          <div class="studio-card-title">Studio 18 m² — La Borie</div>
-          <div class="studio-card-zone">Quartier La Borie, Limoges ouest</div>
+          <div class="studio-card-title">Studio 16,27 m² — Avenue Montjovis</div>
+          <div class="studio-card-zone">Centre-ville, proche place Churchill — Réf. 16M12</div>
           <div class="studio-card-details">
-            <span class="detail-chip">Meublé</span>
+            <span class="detail-chip">Rénové à neuf</span>
             <span class="detail-chip">Cuisine équipée</span>
-            <span class="detail-chip">WiFi</span>
+            <span class="detail-chip">1er étage</span>
           </div>
           <div class="studio-card-footer">
-            <div class="studio-price">370 € <span>cc/mois</span></div>
-            <div class="studio-cta">Voir l'offre →</div>
+            <div class="studio-price">341,51 € <span>cc/mois</span></div>
+            <a href="#contact" class="studio-cta" onclick="prefillContact('16M12 — Studio 16,27 m² Avenue Montjovis')">Demander une visite →</a>
           </div>
         </div>
-      </a>
+      </div>
 
-      <a href="https://begip.fr" target="_blank" rel="noopener noreferrer" class="studio-card reveal">
-        <div class="studio-card-img">
-          <span class="studio-surface">25</span>
+      <div class="studio-card reveal">
+        <div class="studio-card-img" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url('photos/studio-16H32.jpg');">
           <span class="studio-pill available">Disponible</span>
         </div>
         <div class="studio-card-body">
-          <div class="studio-card-title">Studio 25 m² — Centre-ville</div>
-          <div class="studio-card-zone">Hyper centre, proche fac de Droit</div>
+          <div class="studio-card-title">T1 30 m² — Boulevard Victor Hugo</div>
+          <div class="studio-card-zone">Centre-ville, place Dussoubs — Réf. 16H32</div>
           <div class="studio-card-details">
-            <span class="detail-chip">Meublé</span>
-            <span class="detail-chip">Double vitrage</span>
+            <span class="detail-chip">Cuisine équipée</span>
+            <span class="detail-chip">3e étage</span>
             <span class="detail-chip">Calme</span>
           </div>
           <div class="studio-card-footer">
-            <div class="studio-price">430 € <span>cc/mois</span></div>
-            <div class="studio-cta">Voir l'offre →</div>
+            <div class="studio-price">298,59 € <span>cc/mois</span></div>
+            <a href="#contact" class="studio-cta" onclick="prefillContact('16H32 — T1 30 m² Boulevard Victor Hugo')">Demander une visite →</a>
           </div>
         </div>
-      </a>
+      </div>
 
-      <a href="https://begip.fr" target="_blank" rel="noopener noreferrer" class="studio-card reveal">
-        <div class="studio-card-img">
-          <span class="studio-surface">22</span>
-          <span class="studio-pill soon">Dispo septembre 2026</span>
+      <div class="studio-card reveal">
+        <div class="studio-card-img" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url('photos/studio-16H31.jpg');">
+          <span class="studio-pill available">Disponible</span>
         </div>
         <div class="studio-card-body">
-          <div class="studio-card-title">Studio étudiant 22 m² — Quartier Vanteaux</div>
-          <div class="studio-card-zone">Campus Vanteaux, proche Fac Lettres</div>
+          <div class="studio-card-title">T1 20 m² — Boulevard Victor Hugo</div>
+          <div class="studio-card-zone">Centre-ville, place Dussoubs — Réf. 16H31</div>
           <div class="studio-card-details">
             <span class="detail-chip">Meublé</span>
-            <span class="detail-chip">Parking</span>
-            <span class="detail-chip">Résidence</span>
+            <span class="detail-chip">Cuisine équipée</span>
+            <span class="detail-chip">3e étage</span>
           </div>
           <div class="studio-card-footer">
-            <div class="studio-price">395 € <span>cc/mois</span></div>
-            <div class="studio-cta">Voir l'offre →</div>
+            <div class="studio-price">325,79 € <span>cc/mois</span></div>
+            <a href="#contact" class="studio-cta" onclick="prefillContact('16H31 — T1 20 m² Boulevard Victor Hugo')">Demander une visite →</a>
           </div>
         </div>
-      </a>
+      </div>
+
+      <div class="studio-card reveal">
+        <div class="studio-card-img" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url('photos/studio-16C12.jpg');">
+          <span class="studio-pill available">Disponible</span>
+        </div>
+        <div class="studio-card-body">
+          <div class="studio-card-title">T1 31 m² — Rue de la Cité</div>
+          <div class="studio-card-zone">Centre-ville, quartier Cathédrale — Réf. 16C12</div>
+          <div class="studio-card-details">
+            <span class="detail-chip">Cuisine équipée</span>
+            <span class="detail-chip">3e étage</span>
+            <span class="detail-chip">Lumineux</span>
+          </div>
+          <div class="studio-card-footer">
+            <div class="studio-price">336,22 € <span>cc/mois</span></div>
+            <a href="#contact" class="studio-cta" onclick="prefillContact('16C12 — T1 31 m² Rue de la Cité')">Demander une visite →</a>
+          </div>
+        </div>
+      </div>
 
     </div>
 
     <div style="text-align:center; margin-top: 40px;">
+      <p style="color: var(--muted); font-size: .92rem; margin-bottom: 20px; max-width: 620px; margin-left: auto; margin-right: auto;">
+        Sélection des studios actuellement disponibles à la location en centre-ville de Limoges. D'autres biens peuvent être proposés selon vos critères.
+      </p>
       <a href="https://begip.fr" target="_blank" rel="noopener noreferrer" class="btn-primary">
-        Voir tous les studios disponibles sur Begip.fr
+        Voir l'ensemble du parc Begip
       </a>
     </div>
   </div>
@@ -1592,6 +1613,16 @@
       closeMenu();
     }
   });
+
+  // ── Pré-remplissage du formulaire depuis les cartes "Studios disponibles" ──
+  function prefillContact(refStudio) {
+    const messageField = document.getElementById('message');
+    if (messageField) {
+      messageField.value = "Bonjour, je suis intéressé(e) par le studio référencé " + refStudio + ". Merci de me recontacter pour organiser une visite.";
+      messageField.focus();
+    }
+    // Le scroll vers #contact se fait via le href="#contact" du lien
+  }
 
   // ── Double envoi : Formspree (email) + Google Sheets (BDD) ──
   const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxs8YesW21u5Y-wuUlg5-GoiTprz-B7OV33iBTIZzgua6QhjQZf7yw0AobsjGeTg-nyaw/exec';
