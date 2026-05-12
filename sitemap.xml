@@ -3,40 +3,40 @@
 
   <!-- Page principale -->
   <url>
-    <loc>https://studio-limoges.fr/</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.studio-limoges.fr/</loc>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Page formations supérieures -->
+  <!-- Formations supérieures (studio par campus) -->
   <url>
-    <loc>https://studio-limoges.fr/formations-superieures-limoges.html</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.studio-limoges.fr/formations-superieures-limoges.html</loc>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Page distances résidences & formations -->
+  <!-- Distances résidences -->
   <url>
-    <loc>https://studio-limoges.fr/distances-residences-limoges.html</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.studio-limoges.fr/distances-residences-limoges.html</loc>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Page aides au logement APL / ALS -->
+  <!-- Aides logement APL/ALS -->
   <url>
-    <loc>https://studio-limoges.fr/aides-logement-etudiant-limoges.html</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.studio-limoges.fr/aides-logement-etudiant-limoges.html</loc>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Mentions légales -->
   <url>
-    <loc>https://studio-limoges.fr/mentions-legales.html</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.studio-limoges.fr/mentions-legales.html</loc>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
