@@ -91,6 +91,7 @@
 
     /* ── NAV ── */
     nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 16px 48px; background: rgba(26,20,18,.96); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(196,98,45,.2); animation: slideDown .5s ease both; }
+    footer nav { position: static !important; padding: 0 !important; background: transparent !important; backdrop-filter: none !important; border: none !important; animation: none !important; display: flex !important; flex-wrap: wrap !important; gap: 24px !important; }
     @keyframes slideDown { from { transform: translateY(-100%); opacity:0; } to { transform: translateY(0); opacity:1; } }
     .nav-logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.15rem; color: var(--terracotta); text-decoration: none; letter-spacing: .02em; }
     .nav-logo span { color: rgba(255,255,255,.6); font-weight: 400; }
