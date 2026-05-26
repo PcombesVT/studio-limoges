@@ -11,7 +11,7 @@
 
   <!-- Formations supérieures (studio par campus) -->
   <url>
-    <loc>https://www.studio-limoges.fr/formations-superieures-limoges.html</loc>
+    <loc>https://www.studio-limoges.fr/formations-superieures-limoges</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -19,7 +19,7 @@
 
   <!-- Distances résidences -->
   <url>
-    <loc>https://www.studio-limoges.fr/distances-residences-limoges.html</loc>
+    <loc>https://www.studio-limoges.fr/distances-residences-limoges</loc>
     <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -27,7 +27,7 @@
 
   <!-- Aides logement APL/ALS -->
   <url>
-    <loc>https://www.studio-limoges.fr/aides-logement-etudiant-limoges.html</loc>
+    <loc>https://www.studio-limoges.fr/aides-logement-etudiant-limoges</loc>
     <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -35,7 +35,7 @@
 
   <!-- Location studio Limoges -->
   <url>
-    <loc>https://www.studio-limoges.fr/location-studio-limoges.html</loc>
+    <loc>https://www.studio-limoges.fr/location-studio-limoges</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
