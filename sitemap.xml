@@ -40,4 +40,27 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- EN — English home -->
+  <url>
+    <loc>https://www.studio-limoges.fr/en/</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- EN — Studio rental -->
+  <url>
+    <loc>https://www.studio-limoges.fr/en/location-studio-limoges</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- EN — Programmes -->
+  <url>
+    <loc>https://www.studio-limoges.fr/en/formations-superieures-limoges</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
