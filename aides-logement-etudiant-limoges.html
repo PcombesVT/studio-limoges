@@ -10,6 +10,9 @@
   <meta name="keywords" content="APL étudiant Limoges, ALS logement Limoges, aide logement étudiant Limoges 87, APL studio Limoges, CAF Haute-Vienne étudiant, Visale garant étudiant Limoges, Mobili-Jeune alternant Limoges, aide CAF studio Limoges" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
   <link rel="canonical" href="https://www.studio-limoges.fr/aides-logement-etudiant-limoges" />
+  <link rel="alternate" hreflang="fr" href="https://www.studio-limoges.fr/aides-logement-etudiant-limoges" />
+  <link rel="alternate" hreflang="en" href="https://www.studio-limoges.fr/en/aides-logement-etudiant-limoges" />
+  <link rel="alternate" hreflang="x-default" href="https://www.studio-limoges.fr/aides-logement-etudiant-limoges" />
   <meta name="theme-color" content="#16131A" />
 
   <!-- Open Graph -->
@@ -101,6 +104,12 @@
     .nav-link.active { color: var(--terracotta); }
     .nav-cta { background: var(--terracotta); color: #fff !important; padding: 9px 22px; border-radius: 50px; font-weight: 600 !important; transition: background .2s, transform .15s !important; }
     .nav-cta:hover { background: var(--terracotta-light) !important; transform: translateY(-1px); }
+    .lang-switch { display:inline-flex; align-items:center; gap:.25rem; font-family:'Schibsted Grotesk', sans-serif; font-size:.8rem; font-weight:700; }
+    .lang-switch a { color:rgba(255,255,255,.55); text-decoration:none; padding:.1rem .3rem; border-radius:5px; }
+    .lang-switch a.active { color:#fff; }
+    .lang-switch a:hover { color:var(--terracotta-light); }
+    .lang-switch .sep { color:rgba(255,255,255,.3); }
+    .mobile-menu .mobile-lang { color:var(--terracotta-light) !important; font-weight:600; }
     .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
     .hamburger span { display: block; width: 24px; height: 2px; background: #fff; border-radius: 2px; transition: all .3s ease; }
     .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
@@ -269,6 +278,7 @@
     <a href="formations-superieures-limoges" class="nav-link">Formations</a>
     <a href="distances-residences-limoges" class="nav-link">Distances</a>
     <a href="aides-logement-etudiant-limoges" class="nav-link active">Aides APL/ALS</a>
+    <span class="lang-switch"><a href="/aides-logement-etudiant-limoges" class="active">FR</a><span class="sep">/</span><a href="/en/aides-logement-etudiant-limoges">EN</a></span>
     <a href="https://begip.fr" target="_blank" rel="noopener noreferrer" class="nav-link nav-cta">Contacter Begip</a>
   </div>
   <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -283,6 +293,7 @@
   <a href="formations-superieures-limoges">Toutes les formations</a>
   <a href="distances-residences-limoges">Distances &amp; trajets</a>
   <a href="aides-logement-etudiant-limoges">Aides APL / ALS</a>
+  <a href="/en/aides-logement-etudiant-limoges" class="mobile-lang">🌐 English</a>
   <a href="https://begip.fr" target="_blank" rel="noopener noreferrer" class="mobile-cta">Contacter Begip →</a>
 </div>
 
@@ -620,6 +631,7 @@
       <a href="distances-residences-limoges">Distances</a>
       <a href="aides-logement-etudiant-limoges">Aides APL/ALS</a>
       <a href="https://begip.fr" target="_blank" rel="noopener noreferrer">Begip.fr</a>
+      <a href="/en/aides-logement-etudiant-limoges">EN</a>
       <a href="mentions-legales">Mentions légales</a>
     </nav>
     <div class="footer-copy">© 2026 Studio-Limoges.fr — Un site du réseau Begip Limoges</div>
