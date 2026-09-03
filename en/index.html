@@ -58,7 +58,7 @@
       "longitude": 1.2611
     },
     "openingHours": "Mo-Fr 09:00-12:00,14:00-18:00",
-    "priceRange": "350€ - 500€ / mois",
+    "priceRange": "280€ - 500€ / month",
     "areaServed": {
       "@type": "City",
       "name": "Limoges"
@@ -106,7 +106,7 @@
         "name": "How much does a student studio cost in Limoges?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The studios managed by Begip in Limoges start at €350 per month including charges (before housing benefit). Rents vary with size and location, roughly between €350 and €500."
+          "text": "The studios managed by Begip in Limoges start at €280 per month including charges (before housing benefit). Rents vary with size and location, roughly between €280 and €500."
         }
       },
       {
@@ -139,6 +139,22 @@
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Begip offers two options: unfurnished studios (you furnish them yourself, usually a lower rent) and studios with furniture provided (bed, desk, storage, fitted kitchen), ideal for moving in quickly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you need a guarantor to rent a student studio in Limoges?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A guarantor is usually required. If your parents or a relative cannot act as guarantor, the free Visale guarantee (from Action Logement) replaces a personal guarantor for students under 30. Begip helps you put your application together."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When should you look for a studio for the new term in Limoges?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The best availability is between June and August. The most sought-after studios (small units close to the campuses) go quickly once the baccalauréat and Parcoursup results are out. Contact Begip as early as possible to secure a home for September."
         }
       }
     ]
@@ -933,6 +949,20 @@
         text-align: center; box-sizing: border-box;
       }
     }
+
+    /* ── FAQ ── */
+    .faq-section { background: var(--terracotta-pale); padding: 96px 48px; }
+    .faq-list { display: flex; flex-direction: column; gap: 12px; max-width: 820px; margin: 40px auto 0; }
+    .faq-item { background: #fff; border-radius: var(--radius); border: 1px solid var(--border); overflow: hidden; }
+    .faq-question { width: 100%; text-align: left; padding: 20px 24px; background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; transition: background .2s; }
+    .faq-question:hover { background: var(--terracotta-pale); }
+    .faq-q-text { font-family: 'Schibsted Grotesk', sans-serif; font-weight: 700; font-size: .9rem; color: var(--dark); text-align: left; line-height: 1.4; }
+    .faq-arrow { color: var(--terracotta); font-size: 1.1rem; flex-shrink: 0; transition: transform .3s; }
+    .faq-item.open .faq-arrow { transform: rotate(180deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height .4s ease; }
+    .faq-item.open .faq-answer { max-height: 500px; }
+    .faq-answer-inner { padding: 0 24px 20px; font-size: .9rem; color: var(--muted); line-height: 1.75; border-top: 1px solid var(--border); padding-top: 16px; }
+    @media (max-width: 768px) { .faq-section { padding: 64px 20px; } }
   </style>
 </head>
 <body>
@@ -1349,6 +1379,73 @@
   </div>
 </section>
 
+<!-- ── FAQ ── -->
+<section class="faq-section" id="faq" aria-label="Frequently asked questions about student studios in Limoges">
+  <div class="section-inner" style="text-align:center;">
+    <div class="section-tag" style="justify-content:center; color:var(--terracotta);">FAQ</div>
+    <h2 class="reveal">Your questions about renting<br />a student studio in Limoges</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-q-text">How much does a student studio cost in Limoges?</span>
+          <span class="faq-arrow">▾</span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">The studios managed by Begip in Limoges start at €280 per month including charges (before housing benefit). Rents vary with size and location, roughly between €280 and €500.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-q-text">Are the studios eligible for French housing benefit (APL or ALS)?</span>
+          <span class="faq-arrow">▾</span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes. Depending on the home, you may receive APL or ALS housing benefit from the CAF. The allowance can reach up to €200 per month depending on your situation.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-q-text">What are the agency fees for students at Begip?</span>
+          <span class="faq-arrow">▾</span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">Begip charges a reduced student-only agency fee: just €130 for the whole application, including the check-in inventory.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-q-text">Where are the studios located relative to the Limoges campuses?</span>
+          <span class="faq-arrow">▾</span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">Begip offers student studios near every campus: the La Borie district (Sciences, IUT, STAPS), the Vanteaux district (Arts, Architecture), the city centre (Law, IAE) and Ester Technopole (ENSIL-ENSCI, 3iL). Two dedicated student residences (University Meissonier and University Dutreix) are in the La Borie district.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-q-text">Are the studios furnished or unfurnished?</span>
+          <span class="faq-arrow">▾</span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">Begip offers two options: unfurnished studios (you furnish them yourself, usually a lower rent) and studios with furniture provided (bed, desk, storage, fitted kitchen), ideal for moving in quickly.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-q-text">Do you need a guarantor to rent a student studio in Limoges?</span>
+          <span class="faq-arrow">▾</span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">A guarantor is usually required. If your parents or a relative cannot act as guarantor, the free Visale guarantee (from Action Logement) replaces a personal guarantor for students under 30. Begip helps you put your application together.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-q-text">When should you look for a studio for the new term in Limoges?</span>
+          <span class="faq-arrow">▾</span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">The best availability is between June and August. The most sought-after studios (small units close to the campuses) go quickly once the baccalauréat and Parcoursup results are out. Contact Begip as early as possible to secure a home for September.</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ── CONTACT ── -->
 <div class="contact-banner">
   <div class="contact-inner">
@@ -1668,6 +1765,17 @@
       }
     });
   }, 300);
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+      btn.setAttribute('aria-expanded', !isOpen);
+    });
+  });
 
   // Hamburger menu
   const hamburger = document.getElementById('hamburger');
