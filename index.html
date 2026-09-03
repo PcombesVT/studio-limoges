@@ -266,11 +266,13 @@
     /* ── HERO PHOTO PLEIN ÉCRAN (charte C) ── */
     .hero-v2 { position: relative; min-height: 100vh; min-height: 100svh; overflow: hidden; display: flex; flex-direction: column; isolation: isolate; background: #16131A; }
     .hv-slides { position: absolute; inset: 0; z-index: -2; }
-    .hv-slide { position: absolute; inset: 0; background-size: cover; background-position: center; background-color: #241F2B; opacity: 0; animation: hvCycle 21s ease-in-out infinite; }
-    .hv-slide:nth-child(1) { background-image: url('photos/studio-16H32.jpg'); animation-delay: 0s; }
-    .hv-slide:nth-child(2) { background-image: url('photos/studio-16M12.jpg'); animation-delay: 7s; }
-    .hv-slide:nth-child(3) { background-image: url('photos/studio-16C12.jpg'); animation-delay: 14s; }
-    @keyframes hvCycle { 0% { opacity: 0; } 5% { opacity: 1; } 28% { opacity: 1; } 36% { opacity: 0; } 100% { opacity: 0; } }
+    .hv-slide { position: absolute; inset: 0; background-size: cover; background-position: center; background-color: #241F2B; opacity: 0; animation: hvCycle 30s ease-in-out infinite; }
+    .hv-slide:nth-child(1) { background-image: url('photos-hero/1.jpg'); animation-delay: 0s; }
+    .hv-slide:nth-child(2) { background-image: url('photos-hero/2.jpg'); animation-delay: 6s; }
+    .hv-slide:nth-child(3) { background-image: url('photos-hero/3.jpg'); animation-delay: 12s; }
+    .hv-slide:nth-child(4) { background-image: url('photos-hero/4.jpg'); animation-delay: 18s; }
+    .hv-slide:nth-child(5) { background-image: url('photos-hero/5.jpg'); animation-delay: 24s; }
+    @keyframes hvCycle { 0% { opacity: 0; } 3% { opacity: 1; } 17% { opacity: 1; } 20% { opacity: 0; } 100% { opacity: 0; } }
     .hv-scrim { position: absolute; inset: 0; z-index: -1;
       background: linear-gradient(90deg, rgba(16,13,20,.80) 0%, rgba(16,13,20,.44) 46%, rgba(16,13,20,.12) 100%),
                   linear-gradient(180deg, rgba(16,13,20,.60) 0%, transparent 24%); }
@@ -961,6 +963,8 @@
 <!-- ── HERO ── -->
 <header class="hero-v2" role="banner">
   <div class="hv-slides">
+    <div class="hv-slide"></div>
+    <div class="hv-slide"></div>
     <div class="hv-slide"></div>
     <div class="hv-slide"></div>
     <div class="hv-slide"></div>
