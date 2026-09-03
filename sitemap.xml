@@ -63,4 +63,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- EN — Distances -->
+  <url>
+    <loc>https://www.studio-limoges.fr/en/distances-residences-limoges</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
