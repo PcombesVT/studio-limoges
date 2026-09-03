@@ -10,7 +10,7 @@
   <meta name="keywords" content="distance résidence étudiante Limoges fac, trajet étudiant Limoges campus, Meissonier IUT distance, Dutreix faculté Sciences, studio près de la fac Limoges, logement étudiant proche université Limoges" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
   <link rel="canonical" href="https://www.studio-limoges.fr/distances-residences-limoges" />
-  <meta name="theme-color" content="#1a1412" />
+  <meta name="theme-color" content="#16131A" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Distances résidences Begip ↔ formations à Limoges — Temps de trajet étudiant" />
@@ -34,23 +34,23 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Literata:ital,wght@0,300;0,400;0,500;1,300&display=swap" />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Literata:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800;900&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800;900&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <style>
     :root {
-      --terracotta: #c4622d;
-      --terracotta-light: #e8845a;
-      --terracotta-pale: #fdf0ea;
-      --dark: #1a1412;
-      --dark-mid: #2d2320;
-      --warm-white: #faf8f5;
-      --text: #2d2320;
-      --muted: #7a6d68;
-      --border: rgba(196,98,45,.15);
+      --terracotta: #DB2E77;
+      --terracotta-light: #E85A96;
+      --terracotta-pale: #FCE7F0;
+      --dark: #16131A;
+      --dark-mid: #241F2B;
+      --warm-white: #FFFFFF;
+      --text: #241F2B;
+      --muted: #565261;
+      --border: rgba(219,46,119,.15);
       --radius: 14px;
       /* Couleurs par résidence */
-      --color-meissonier: #c4622d;
+      --color-meissonier: #DB2E77;
       --color-dutreix: #2d7a4f;
       --color-emagine: #4a6fa5;
     }
@@ -58,7 +58,7 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
-      font-family: 'Literata', Georgia, serif;
+      font-family: 'Hanken Grotesk', system-ui, sans-serif;
       background: var(--warm-white);
       color: var(--text);
       overflow-x: hidden;
@@ -69,22 +69,22 @@
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       display: flex; align-items: center; justify-content: space-between;
       padding: 16px 48px;
-      background: rgba(26,20,18,.96);
+      background: rgba(20,17,25,.96);
       backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(196,98,45,.2);
+      border-bottom: 1px solid rgba(219,46,119,.2);
       animation: slideDown .5s ease both;
     }
     @keyframes slideDown { from { transform: translateY(-100%); opacity:0; } to { transform: translateY(0); opacity:1; } }
 
     .nav-logo {
-      font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.15rem;
+      font-family: 'Schibsted Grotesk', sans-serif; font-weight: 800; font-size: 1.15rem;
       color: var(--terracotta); text-decoration: none; letter-spacing: .02em;
     }
     .nav-logo span { color: rgba(255,255,255,.6); font-weight: 400; }
     .nav-right { display: flex; align-items: center; gap: 28px; }
     .nav-link {
       color: rgba(255,255,255,.6); text-decoration: none;
-      font-family: 'Syne', sans-serif; font-size: .8rem;
+      font-family: 'Schibsted Grotesk', sans-serif; font-size: .8rem;
       letter-spacing: .08em; text-transform: uppercase; transition: color .2s;
     }
     .nav-link:hover { color: var(--terracotta-light); }
@@ -110,14 +110,14 @@
     .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
     .mobile-menu {
       display: none; position: fixed; top: 58px; left: 0; right: 0;
-      background: rgba(26,20,18,.98); backdrop-filter: blur(12px);
+      background: rgba(20,17,25,.98); backdrop-filter: blur(12px);
       padding: 20px 24px 28px; flex-direction: column; gap: 4px;
-      border-bottom: 1px solid rgba(196,98,45,.2); z-index: 99;
+      border-bottom: 1px solid rgba(219,46,119,.2); z-index: 99;
     }
     .mobile-menu.open { display: flex; }
     .mobile-menu a {
       color: rgba(255,255,255,.8); text-decoration: none;
-      font-family: 'Syne', sans-serif; font-size: .95rem; font-weight: 500;
+      font-family: 'Schibsted Grotesk', sans-serif; font-size: .95rem; font-weight: 500;
       padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,.06); transition: color .2s;
     }
     .mobile-menu a:last-child { border-bottom: none; }
@@ -135,18 +135,18 @@
     }
     .page-hero::before {
       content: ''; position: absolute; inset: 0;
-      background: radial-gradient(ellipse 60% 50% at 70% 40%, rgba(196,98,45,.18) 0%, transparent 70%);
+      background: radial-gradient(ellipse 60% 50% at 70% 40%, rgba(219,46,119,.18) 0%, transparent 70%);
     }
     .page-hero-inner { max-width: 1160px; margin: 0 auto; position: relative; z-index: 1; }
     .hero-tag {
       display: inline-flex; align-items: center; gap: 10px;
-      font-family: 'Syne', sans-serif; font-size: .72rem; letter-spacing: .16em;
+      font-family: 'Schibsted Grotesk', sans-serif; font-size: .72rem; letter-spacing: .16em;
       text-transform: uppercase; color: var(--terracotta); margin-bottom: 20px;
       animation: fadeUp .6s .2s both;
     }
     .hero-tag::before { content: ''; width: 28px; height: 1px; background: var(--terracotta); }
     .page-hero h1 {
-      font-family: 'Syne', sans-serif; font-weight: 800;
+      font-family: 'Schibsted Grotesk', sans-serif; font-weight: 800;
       font-size: clamp(2rem, 4vw, 3.2rem); color: #fff; line-height: 1.1; margin-bottom: 20px;
       animation: fadeUp .6s .35s both;
     }
@@ -166,14 +166,14 @@
       display: flex; align-items: center; gap: 32px; flex-wrap: wrap;
     }
     .legende-title {
-      font-family: 'Syne', sans-serif; font-size: .72rem;
+      font-family: 'Schibsted Grotesk', sans-serif; font-size: .72rem;
       text-transform: uppercase; letter-spacing: .12em;
       color: rgba(255,255,255,.4);
     }
     .legende-items { display: flex; gap: 20px; flex-wrap: wrap; }
     .legende-item {
       display: flex; align-items: center; gap: 8px;
-      font-family: 'Syne', sans-serif; font-size: .75rem; color: rgba(255,255,255,.6);
+      font-family: 'Schibsted Grotesk', sans-serif; font-size: .75rem; color: rgba(255,255,255,.6);
     }
     .legende-dot {
       width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0;
@@ -190,7 +190,7 @@
     .breadcrumb-inner {
       max-width: 1160px; margin: 0 auto;
       display: flex; align-items: center; gap: 8px;
-      font-family: 'Syne', sans-serif; font-size: .75rem; color: var(--muted);
+      font-family: 'Schibsted Grotesk', sans-serif; font-size: .75rem; color: var(--muted);
     }
     .breadcrumb-inner a { color: var(--muted); text-decoration: none; transition: color .2s; }
     .breadcrumb-inner a:hover { color: var(--terracotta); }
@@ -203,14 +203,14 @@
     }
     .residences-intro-inner { max-width: 1160px; margin: 0 auto; }
     .residences-intro h2 {
-      font-family: 'Syne', sans-serif; font-weight: 800;
+      font-family: 'Schibsted Grotesk', sans-serif; font-weight: 800;
       font-size: clamp(1.5rem, 2.5vw, 2rem); color: var(--dark); margin-bottom: 10px;
     }
     .residences-intro-sub {
       font-size: 1rem; color: var(--muted); line-height: 1.7; max-width: 600px; margin-bottom: 40px;
     }
     .section-tag {
-      font-family: 'Syne', sans-serif; font-size: .72rem;
+      font-family: 'Schibsted Grotesk', sans-serif; font-size: .72rem;
       text-transform: uppercase; letter-spacing: .16em;
       color: var(--terracotta); display: flex; align-items: center; gap: 10px; margin-bottom: 14px;
     }
@@ -225,8 +225,8 @@
       border: 2px solid transparent;
     }
     .res-summary-card.meissonier {
-      background: rgba(196,98,45,.06);
-      border-color: rgba(196,98,45,.2);
+      background: rgba(219,46,119,.06);
+      border-color: rgba(219,46,119,.2);
     }
     .res-summary-card.dutreix {
       background: rgba(45,122,79,.06);
@@ -238,7 +238,7 @@
     }
     .res-summary-badge {
       display: inline-flex; align-items: center; gap: 6px;
-      font-family: 'Syne', sans-serif; font-size: .68rem; font-weight: 700;
+      font-family: 'Schibsted Grotesk', sans-serif; font-size: .68rem; font-weight: 700;
       letter-spacing: .1em; text-transform: uppercase;
       padding: 4px 12px; border-radius: 50px; margin-bottom: 12px;
     }
@@ -246,14 +246,14 @@
     .res-summary-badge.dutreix { background: var(--color-dutreix); color: #fff; }
     .res-summary-badge.emagine { background: var(--color-emagine); color: #fff; }
     .res-summary-name {
-      font-family: 'Syne', sans-serif; font-weight: 800;
+      font-family: 'Schibsted Grotesk', sans-serif; font-weight: 800;
       font-size: 1rem; color: var(--dark); margin-bottom: 6px;
     }
     .res-summary-adresse {
       font-size: .8rem; color: var(--muted); line-height: 1.5; margin-bottom: 12px;
     }
     .res-summary-link {
-      font-family: 'Syne', sans-serif; font-size: .78rem; font-weight: 600;
+      font-family: 'Schibsted Grotesk', sans-serif; font-size: .78rem; font-weight: 600;
       text-decoration: none; display: inline-flex; align-items: center; gap: 4px;
       transition: gap .2s;
     }
@@ -267,7 +267,7 @@
     .distances-inner { max-width: 1160px; margin: 0 auto; }
 
     .distances-group-title {
-      font-family: 'Syne', sans-serif; font-weight: 800;
+      font-family: 'Schibsted Grotesk', sans-serif; font-weight: 800;
       font-size: 1.3rem; color: var(--dark);
       margin-bottom: 6px;
       display: flex; align-items: center; gap: 12px;
@@ -289,7 +289,7 @@
     }
     .distance-table thead th {
       padding: 14px 18px;
-      font-family: 'Syne', sans-serif; font-size: .72rem;
+      font-family: 'Schibsted Grotesk', sans-serif; font-size: .72rem;
       text-transform: uppercase; letter-spacing: .1em;
       font-weight: 700; text-align: left;
       color: rgba(255,255,255,.6);
@@ -304,25 +304,25 @@
       transition: background .15s;
     }
     .distance-table tbody tr:last-child { border-bottom: none; }
-    .distance-table tbody tr:nth-child(even) { background: rgba(196,98,45,.02); }
+    .distance-table tbody tr:nth-child(even) { background: rgba(219,46,119,.02); }
     .distance-table tbody tr:hover { background: var(--terracotta-pale); }
 
     .distance-table td {
       padding: 14px 18px; vertical-align: middle;
     }
     .distance-table td:first-child {
-      font-family: 'Syne', sans-serif; font-size: .85rem; font-weight: 600;
+      font-family: 'Schibsted Grotesk', sans-serif; font-size: .85rem; font-weight: 600;
       color: var(--dark); min-width: 220px;
     }
     .distance-table td:first-child small {
       display: block; font-weight: 400; color: var(--muted); font-size: .75rem; margin-top: 2px;
-      font-family: 'Literata', serif;
+      font-family: 'Hanken Grotesk', system-ui, sans-serif;
     }
 
     /* Cellule de distance */
     .dist-cell { text-align: center; }
     .dist-primary {
-      font-family: 'Syne', sans-serif; font-weight: 700; font-size: .9rem;
+      font-family: 'Schibsted Grotesk', sans-serif; font-weight: 700; font-size: .9rem;
       color: var(--dark); display: block;
     }
     .dist-modes {
@@ -330,12 +330,12 @@
     }
     .dist-mode {
       display: inline-flex; align-items: center; gap: 3px;
-      font-family: 'Syne', sans-serif; font-size: .68rem;
+      font-family: 'Schibsted Grotesk', sans-serif; font-size: .68rem;
       padding: 2px 8px; border-radius: 50px;
       white-space: nowrap;
     }
     .dist-mode.pied {
-      background: rgba(196,98,45,.1); color: var(--terracotta);
+      background: rgba(219,46,119,.1); color: var(--terracotta);
     }
     .dist-mode.velo {
       background: rgba(45,122,79,.1); color: #2d7a4f;
@@ -347,7 +347,7 @@
       background: rgba(0,0,0,.05); color: var(--muted);
     }
     .dist-na {
-      color: rgba(0,0,0,.2); font-family: 'Syne', sans-serif; font-size: .8rem;
+      color: rgba(0,0,0,.2); font-family: 'Schibsted Grotesk', sans-serif; font-size: .8rem;
     }
 
     /* ── POINTS CLÉS ── */
@@ -357,7 +357,7 @@
     }
     .points-cles-inner { max-width: 1160px; margin: 0 auto; }
     .points-cles-section .section-tag { color: var(--terracotta); }
-    .points-cles-section h2 { color: #fff; font-family: 'Syne', sans-serif; font-weight: 800; font-size: clamp(1.5rem,2.5vw,2rem); margin-bottom: 10px; }
+    .points-cles-section h2 { color: #fff; font-family: 'Schibsted Grotesk', sans-serif; font-weight: 800; font-size: clamp(1.5rem,2.5vw,2rem); margin-bottom: 10px; }
     .points-cles-sub { color: rgba(255,255,255,.5); font-size: 1rem; line-height: 1.7; max-width: 580px; margin-bottom: 36px; }
 
     .points-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
@@ -366,9 +366,9 @@
       border-radius: var(--radius); padding: 24px;
       transition: background .25s, border-color .25s;
     }
-    .point-card:hover { background: rgba(196,98,45,.1); border-color: rgba(196,98,45,.3); }
+    .point-card:hover { background: rgba(219,46,119,.1); border-color: rgba(219,46,119,.3); }
     .point-name {
-      font-family: 'Syne', sans-serif; font-weight: 700;
+      font-family: 'Schibsted Grotesk', sans-serif; font-weight: 700;
       font-size: .95rem; color: #fff; margin-bottom: 6px;
       display: flex; align-items: center; gap: 10px;
     }
@@ -380,7 +380,7 @@
       background: rgba(255,255,255,.04); border-radius: 8px;
     }
     .point-distance-label {
-      font-family: 'Syne', sans-serif; font-size: .75rem;
+      font-family: 'Schibsted Grotesk', sans-serif; font-size: .75rem;
       display: flex; align-items: center; gap: 6px;
     }
     .label-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
@@ -388,7 +388,7 @@
     .label-dot.dutreix { background: var(--color-dutreix); }
     .label-dot.emagine { background: var(--color-emagine); }
     .point-distance-val {
-      font-family: 'Syne', sans-serif; font-size: .78rem; font-weight: 600;
+      font-family: 'Schibsted Grotesk', sans-serif; font-size: .78rem; font-weight: 600;
       color: rgba(255,255,255,.7);
     }
     .point-distance-modes {
@@ -406,16 +406,16 @@
       display: flex; gap: 24px; flex-wrap: wrap; align-items: center;
     }
     .legend-title {
-      font-family: 'Syne', sans-serif; font-size: .75rem;
+      font-family: 'Schibsted Grotesk', sans-serif; font-size: .75rem;
       text-transform: uppercase; letter-spacing: .1em; color: var(--muted);
     }
     .legend-chips { display: flex; gap: 10px; flex-wrap: wrap; }
     .legend-chip {
       display: inline-flex; align-items: center; gap: 5px;
-      font-family: 'Syne', sans-serif; font-size: .75rem;
+      font-family: 'Schibsted Grotesk', sans-serif; font-size: .75rem;
       padding: 5px 12px; border-radius: 50px;
     }
-    .legend-chip.pied { background: rgba(196,98,45,.12); color: var(--terracotta); }
+    .legend-chip.pied { background: rgba(219,46,119,.12); color: var(--terracotta); }
     .legend-chip.velo { background: rgba(45,122,79,.12); color: #2d7a4f; }
     .legend-chip.bus { background: rgba(74,111,165,.14); color: #4a6fa5; }
     .disclaimer {
@@ -429,20 +429,20 @@
       padding: 72px 48px; text-align: center;
     }
     .cta-inner { max-width: 640px; margin: 0 auto; }
-    .cta-title { font-family: 'Syne', sans-serif; font-weight: 800; font-size: clamp(1.6rem,3vw,2.2rem); color: #fff; margin-bottom: 14px; }
+    .cta-title { font-family: 'Schibsted Grotesk', sans-serif; font-weight: 800; font-size: clamp(1.6rem,3vw,2.2rem); color: #fff; margin-bottom: 14px; }
     .cta-sub { color: rgba(255,255,255,.8); font-size: 1rem; line-height: 1.7; margin-bottom: 32px; }
     .cta-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
     .btn-white {
       background: #fff; color: var(--terracotta);
       padding: 14px 32px; border-radius: 50px;
-      font-family: 'Syne', sans-serif; font-weight: 700; font-size: .88rem;
+      font-family: 'Schibsted Grotesk', sans-serif; font-weight: 700; font-size: .88rem;
       text-decoration: none; transition: transform .15s, box-shadow .2s;
     }
     .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.2); }
     .btn-ghost-white {
       border: 1.5px solid rgba(255,255,255,.5); color: #fff; font-weight: 500;
       padding: 14px 32px; border-radius: 50px;
-      font-family: 'Syne', sans-serif; font-size: .88rem; text-decoration: none;
+      font-family: 'Schibsted Grotesk', sans-serif; font-size: .88rem; text-decoration: none;
       transition: border-color .2s, background .2s;
     }
     .btn-ghost-white:hover { border-color: #fff; background: rgba(255,255,255,.1); }
@@ -450,9 +450,9 @@
     /* ── FOOTER ── */
     footer { background: #0d0a09; padding: 48px; color: rgba(255,255,255,.4); }
     .footer-inner { max-width: 1160px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
-    .footer-logo { font-family: 'Syne', sans-serif; font-weight: 800; color: var(--terracotta); font-size: 1rem; text-decoration: none; }
+    .footer-logo { font-family: 'Schibsted Grotesk', sans-serif; font-weight: 800; color: var(--terracotta); font-size: 1rem; text-decoration: none; }
     .footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
-    .footer-links a { color: rgba(255,255,255,.35); text-decoration: none; font-family: 'Syne', sans-serif; font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; transition: color .2s; }
+    .footer-links a { color: rgba(255,255,255,.35); text-decoration: none; font-family: 'Schibsted Grotesk', sans-serif; font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; transition: color .2s; }
     .footer-links a:hover { color: var(--terracotta-light); }
     .footer-copy { font-size: .78rem; }
 
