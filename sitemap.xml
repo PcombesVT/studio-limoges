@@ -41,6 +41,14 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- Studio centre-ville Limoges -->
+  <url>
+    <loc>https://www.studio-limoges.fr/studio-centre-ville-limoges</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- EN — English home -->
   <url>
     <loc>https://www.studio-limoges.fr/en/</loc>
