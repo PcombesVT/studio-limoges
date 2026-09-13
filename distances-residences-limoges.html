@@ -601,7 +601,7 @@
       <div class="res-summary-card emagine">
         <div class="res-summary-badge emagine">🏠 Résidence 3</div>
         <div class="res-summary-name">E-Magine</div>
-        <div class="res-summary-adresse">📍 18 rue de la République<br/>87170 Isle — commune limitrophe de Limoges</div>
+        <div class="res-summary-adresse">📍 18 Av. de la République<br/>87170 Isle — commune limitrophe de Limoges</div>
         <p style="font-size:.78rem;color:var(--muted);line-height:1.5;margin-bottom:10px;">
           🔑 <strong>Location</strong> : Begip<br/>
           🏢 <strong>Gestion</strong> : Elyade (Saint-Jean, 31)
@@ -621,11 +621,11 @@
     <div class="legend-chips">
       <span class="legend-chip pied">🚶 À pied</span>
       <span class="legend-chip velo">🚲 À vélo</span>
-      <span class="legend-chip bus">🚌 En bus/TC</span>
+      <span class="legend-chip bus">🚗 En voiture</span>
     </div>
   </div>
   <p class="disclaimer">
-    ⚠️ Les temps indiqués sont des estimations moyennes calculées en conditions normales de circulation. Ils peuvent varier selon le trafic, l'itinéraire exact et la condition physique. Sources : calculs d'itinéraire OpenStreetMap / Google Maps. Vérifiez les horaires du réseau STCL pour les trajets en bus.
+    ⚠️ Les temps indiqués sont des estimations moyennes en conditions normales. Ils peuvent varier selon le trafic, l'itinéraire exact et la condition physique. Sources : calculs d'itinéraire OpenStreetMap (OSRM) / Google Maps. Pour les trajets en transports en commun, consultez les horaires du réseau STCL.
   </p>
 </div>
 
@@ -657,6 +657,13 @@
             <small>123 Av. Albert Thomas</small>
           </td>
           <td class="dist-cell">
+            <span class="dist-primary">~11 min</span>
+            <div class="dist-modes">
+              <span class="dist-mode pied">🚶 11 min</span>
+              <span class="dist-mode velo">🚲 3 min</span>
+            </div>
+          </td>
+          <td class="dist-cell">
             <span class="dist-primary">~15 min</span>
             <div class="dist-modes">
               <span class="dist-mode pied">🚶 15 min</span>
@@ -664,53 +671,53 @@
             </div>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~10 min</span>
+            <span class="dist-primary">~14 min</span>
             <div class="dist-modes">
-              <span class="dist-mode pied">🚶 10 min</span>
-              <span class="dist-mode velo">🚲 4 min</span>
+              <span class="dist-mode velo">🚲 14 min</span>
+              <span class="dist-mode voiture">🚗 7 min</span>
             </div>
           </td>
-          <td class="dist-cell">
-            <span class="dist-primary">~30 min</span>
-            <div class="dist-modes">
-              <span class="dist-mode bus">🚌 25 min</span>
-              <span class="dist-mode voiture">🚗 10 min</span>
-            </div>
-          </td>
-        </tr>
+                </tr>
         <tr>
           <td>
             IUT du Limousin
             <small>12 Allée André Maurois</small>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~12 min</span>
+            <span class="dist-primary">~17 min</span>
             <div class="dist-modes">
-              <span class="dist-mode pied">🚶 12 min</span>
-              <span class="dist-mode velo">🚲 4 min</span>
+              <span class="dist-mode pied">🚶 17 min</span>
+              <span class="dist-mode velo">🚲 7 min</span>
             </div>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~5 min</span>
+            <span class="dist-primary">~7 min</span>
             <div class="dist-modes">
-              <span class="dist-mode pied">🚶 5 min</span>
-              <span class="dist-mode velo">🚲 2 min</span>
+              <span class="dist-mode pied">🚶 7 min</span>
+              <span class="dist-mode velo">🚲 3 min</span>
             </div>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~28 min</span>
+            <span class="dist-primary">~11 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 25 min</span>
-              <span class="dist-mode voiture">🚗 10 min</span>
+              <span class="dist-mode velo">🚲 11 min</span>
+              <span class="dist-mode voiture">🚗 6 min</span>
             </div>
           </td>
-        </tr>
+                </tr>
         <tr>
           <td>
             STAPS — Sciences du sport
             <small>123 Av. Albert Thomas</small>
           </td>
           <td class="dist-cell">
+            <span class="dist-primary">~11 min</span>
+            <div class="dist-modes">
+              <span class="dist-mode pied">🚶 11 min</span>
+              <span class="dist-mode velo">🚲 3 min</span>
+            </div>
+          </td>
+          <td class="dist-cell">
             <span class="dist-primary">~15 min</span>
             <div class="dist-modes">
               <span class="dist-mode pied">🚶 15 min</span>
@@ -718,71 +725,67 @@
             </div>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~10 min</span>
+            <span class="dist-primary">~14 min</span>
             <div class="dist-modes">
-              <span class="dist-mode pied">🚶 10 min</span>
-              <span class="dist-mode velo">🚲 4 min</span>
+              <span class="dist-mode velo">🚲 14 min</span>
+              <span class="dist-mode voiture">🚗 7 min</span>
             </div>
           </td>
-          <td class="dist-cell">
-            <span class="dist-primary">~30 min</span>
-            <div class="dist-modes">
-              <span class="dist-mode bus">🚌 25 min</span>
-            </div>
-          </td>
-        </tr>
+                </tr>
         <tr>
           <td>
             Lycée Suzanne Valadon — CPGE
             <small>39 Rue François Perrin</small>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~18 min</span>
+            <span class="dist-primary">~9 min</span>
             <div class="dist-modes">
-              <span class="dist-mode pied">🚶 18 min</span>
+              <span class="dist-mode pied">🚶 9 min</span>
+              <span class="dist-mode velo">🚲 3 min</span>
+            </div>
+          </td>
+          <td class="dist-cell">
+            <span class="dist-primary">~17 min</span>
+            <div class="dist-modes">
+              <span class="dist-mode pied">🚶 17 min</span>
               <span class="dist-mode velo">🚲 6 min</span>
             </div>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~15 min</span>
+            <span class="dist-primary">~12 min</span>
             <div class="dist-modes">
-              <span class="dist-mode pied">🚶 15 min</span>
-              <span class="dist-mode velo">🚲 5 min</span>
+              <span class="dist-mode velo">🚲 12 min</span>
+              <span class="dist-mode voiture">🚗 5 min</span>
             </div>
           </td>
-          <td class="dist-cell">
-            <span class="dist-primary">~35 min</span>
-            <div class="dist-modes">
-              <span class="dist-mode bus">🚌 30 min</span>
-            </div>
-          </td>
-        </tr>
+                </tr>
         <tr>
           <td>
             Lycée Turgot — BTS
             <small>6 Rue Paul Derignac</small>
           </td>
           <td class="dist-cell">
+            <span class="dist-primary">~13 min</span>
+            <div class="dist-modes">
+              <span class="dist-mode pied">🚶 13 min</span>
+              <span class="dist-mode velo">🚲 5 min</span>
+            </div>
+          </td>
+          <td class="dist-cell">
             <span class="dist-primary">~22 min</span>
             <div class="dist-modes">
               <span class="dist-mode pied">🚶 22 min</span>
-              <span class="dist-mode bus">🚌 12 min</span>
+              <span class="dist-mode velo">🚲 8 min</span>
             </div>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~20 min</span>
+            <span class="dist-primary">~12 min</span>
             <div class="dist-modes">
-              <span class="dist-mode pied">🚶 20 min</span>
-              <span class="dist-mode bus">🚌 12 min</span>
+              <span class="dist-mode velo">🚲 12 min</span>
+              <span class="dist-mode voiture">🚗 6 min</span>
             </div>
           </td>
-          <td class="dist-cell">
-            <span class="dist-primary">~38 min</span>
-            <div class="dist-modes">
-              <span class="dist-mode bus">🚌 35 min</span>
-            </div>
-          </td>
-        </tr>
+                </tr>
       </tbody>
     </table>
     </div>
@@ -810,156 +813,162 @@
             <small>2 rue du Docteur Marcland</small>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~25 min</span>
+            <span class="dist-primary">~13 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 20 min</span>
-              <span class="dist-mode velo">🚲 10 min</span>
+              <span class="dist-mode velo">🚲 13 min</span>
+              <span class="dist-mode voiture">🚗 8 min</span>
             </div>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~28 min</span>
+            <span class="dist-primary">~13 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 22 min</span>
-              <span class="dist-mode velo">🚲 12 min</span>
+              <span class="dist-mode velo">🚲 13 min</span>
+              <span class="dist-mode voiture">🚗 7 min</span>
             </div>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~40 min</span>
+            <span class="dist-primary">~12 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 38 min</span>
+              <span class="dist-mode pied">🚶 12 min</span>
+              <span class="dist-mode velo">🚲 4 min</span>
             </div>
           </td>
-        </tr>
+                </tr>
         <tr>
           <td>
             Fac des Lettres &amp; Sciences Humaines
             <small>39E rue Camille Guérin</small>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~22 min</span>
+            <span class="dist-primary">~31 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 18 min</span>
-              <span class="dist-mode velo">🚲 9 min</span>
-            </div>
-          </td>
-          <td class="dist-cell">
-            <span class="dist-primary">~25 min</span>
-            <div class="dist-modes">
-              <span class="dist-mode bus">🚌 20 min</span>
-              <span class="dist-mode velo">🚲 10 min</span>
-            </div>
-          </td>
-          <td class="dist-cell">
-            <span class="dist-primary">~38 min</span>
-            <div class="dist-modes">
-              <span class="dist-mode bus">🚌 35 min</span>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            ENSAD — Art &amp; Design de Limoges
-            <small>Av. Martin Luther King, Vanteaux</small>
-          </td>
-          <td class="dist-cell">
-            <span class="dist-primary">~25 min</span>
-            <div class="dist-modes">
-              <span class="dist-mode bus">🚌 20 min</span>
+              <span class="dist-mode pied">🚶 31 min</span>
               <span class="dist-mode velo">🚲 11 min</span>
             </div>
           </td>
           <td class="dist-cell">
             <span class="dist-primary">~28 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 22 min</span>
-              <span class="dist-mode velo">🚲 12 min</span>
+              <span class="dist-mode pied">🚶 28 min</span>
+              <span class="dist-mode velo">🚲 10 min</span>
             </div>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~42 min</span>
+            <span class="dist-primary">~14 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 40 min</span>
+              <span class="dist-mode pied">🚶 14 min</span>
+              <span class="dist-mode velo">🚲 4 min</span>
             </div>
           </td>
-        </tr>
+                </tr>
+        <tr>
+          <td>
+            ENSAD — Art &amp; Design de Limoges
+            <small>Av. Martin Luther King, Vanteaux</small>
+          </td>
+          <td class="dist-cell">
+            <span class="dist-primary">~30 min</span>
+            <div class="dist-modes">
+              <span class="dist-mode pied">🚶 30 min</span>
+              <span class="dist-mode velo">🚲 10 min</span>
+            </div>
+          </td>
+          <td class="dist-cell">
+            <span class="dist-primary">~31 min</span>
+            <div class="dist-modes">
+              <span class="dist-mode pied">🚶 31 min</span>
+              <span class="dist-mode velo">🚲 11 min</span>
+            </div>
+          </td>
+          <td class="dist-cell">
+            <span class="dist-primary">~13 min</span>
+            <div class="dist-modes">
+              <span class="dist-mode pied">🚶 13 min</span>
+              <span class="dist-mode velo">🚲 5 min</span>
+            </div>
+          </td>
+                </tr>
         <tr>
           <td>
             IFSI — École d'infirmières CHU
             <small>39F rue Camille Guérin</small>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~22 min</span>
+            <span class="dist-primary">~31 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 18 min</span>
-              <span class="dist-mode velo">🚲 9 min</span>
+              <span class="dist-mode pied">🚶 31 min</span>
+              <span class="dist-mode velo">🚲 11 min</span>
             </div>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~25 min</span>
+            <span class="dist-primary">~28 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 20 min</span>
+              <span class="dist-mode pied">🚶 28 min</span>
               <span class="dist-mode velo">🚲 10 min</span>
             </div>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~38 min</span>
+            <span class="dist-primary">~14 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 35 min</span>
+              <span class="dist-mode pied">🚶 14 min</span>
+              <span class="dist-mode velo">🚲 4 min</span>
             </div>
           </td>
-        </tr>
+                </tr>
         <tr>
           <td>
             ILFOMER — Rééducation
             <small>39F rue Camille Guérin</small>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~22 min</span>
+            <span class="dist-primary">~31 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 18 min</span>
-              <span class="dist-mode velo">🚲 9 min</span>
+              <span class="dist-mode pied">🚶 31 min</span>
+              <span class="dist-mode velo">🚲 11 min</span>
             </div>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~25 min</span>
+            <span class="dist-primary">~28 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 20 min</span>
+              <span class="dist-mode pied">🚶 28 min</span>
               <span class="dist-mode velo">🚲 10 min</span>
             </div>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~38 min</span>
+            <span class="dist-primary">~14 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 35 min</span>
+              <span class="dist-mode pied">🚶 14 min</span>
+              <span class="dist-mode velo">🚲 4 min</span>
             </div>
           </td>
-        </tr>
+                </tr>
         <tr>
           <td>
             CHU de Limoges
             <small>2 Av. Martin Luther King</small>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~25 min</span>
+            <span class="dist-primary">~30 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 20 min</span>
+              <span class="dist-mode pied">🚶 30 min</span>
               <span class="dist-mode velo">🚲 10 min</span>
             </div>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~28 min</span>
+            <span class="dist-primary">~31 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 22 min</span>
-              <span class="dist-mode velo">🚲 12 min</span>
+              <span class="dist-mode pied">🚶 31 min</span>
+              <span class="dist-mode velo">🚲 11 min</span>
             </div>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~42 min</span>
+            <span class="dist-primary">~13 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 38 min</span>
+              <span class="dist-mode pied">🚶 13 min</span>
+              <span class="dist-mode velo">🚲 5 min</span>
             </div>
           </td>
-        </tr>
+                </tr>
       </tbody>
     </table>
     </div>
@@ -987,79 +996,81 @@
             <small>5 rue Félix Eboué</small>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~30 min</span>
+            <span class="dist-primary">~28 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 22 min</span>
+              <span class="dist-mode pied">🚶 28 min</span>
+              <span class="dist-mode velo">🚲 10 min</span>
+            </div>
+          </td>
+          <td class="dist-cell">
+            <span class="dist-primary">~13 min</span>
+            <div class="dist-modes">
               <span class="dist-mode velo">🚲 13 min</span>
+              <span class="dist-mode voiture">🚗 6 min</span>
             </div>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~32 min</span>
+            <span class="dist-primary">~14 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 25 min</span>
               <span class="dist-mode velo">🚲 14 min</span>
+              <span class="dist-mode voiture">🚗 6 min</span>
             </div>
           </td>
-          <td class="dist-cell">
-            <span class="dist-primary">~35 min</span>
-            <div class="dist-modes">
-              <span class="dist-mode bus">🚌 30 min</span>
-              <span class="dist-mode voiture">🚗 12 min</span>
-            </div>
-          </td>
-        </tr>
+                </tr>
         <tr>
           <td>
             IAE — École de Management
             <small>3 rue François Mitterrand</small>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~28 min</span>
+            <span class="dist-primary">~29 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 20 min</span>
-              <span class="dist-mode velo">🚲 12 min</span>
+              <span class="dist-mode pied">🚶 29 min</span>
+              <span class="dist-mode velo">🚲 10 min</span>
             </div>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~30 min</span>
+            <span class="dist-primary">~13 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 23 min</span>
               <span class="dist-mode velo">🚲 13 min</span>
+              <span class="dist-mode voiture">🚗 6 min</span>
             </div>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~35 min</span>
+            <span class="dist-primary">~15 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 30 min</span>
+              <span class="dist-mode velo">🚲 15 min</span>
+              <span class="dist-mode voiture">🚗 6 min</span>
             </div>
           </td>
-        </tr>
+                </tr>
         <tr>
           <td>
             3IL — Ingénieur Limoges
             <small>43 rue Sainte Anne</small>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~28 min</span>
+            <span class="dist-primary">~16 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 20 min</span>
-              <span class="dist-mode velo">🚲 12 min</span>
+              <span class="dist-mode velo">🚲 16 min</span>
+              <span class="dist-mode voiture">🚗 9 min</span>
             </div>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~30 min</span>
+            <span class="dist-primary">~19 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 22 min</span>
-              <span class="dist-mode velo">🚲 13 min</span>
+              <span class="dist-mode velo">🚲 19 min</span>
+              <span class="dist-mode voiture">🚗 9 min</span>
             </div>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~32 min</span>
+            <span class="dist-primary">~19 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 28 min</span>
+              <span class="dist-mode velo">🚲 19 min</span>
+              <span class="dist-mode voiture">🚗 7 min</span>
             </div>
           </td>
-        </tr>
+                </tr>
       </tbody>
     </table>
     </div>
@@ -1087,81 +1098,81 @@
             <small>16 rue Atlantis, Ester Technopole</small>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~35 min</span>
+            <span class="dist-primary">~26 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 30 min</span>
+              <span class="dist-mode velo">🚲 26 min</span>
+              <span class="dist-mode voiture">🚗 12 min</span>
+            </div>
+          </td>
+          <td class="dist-cell">
+            <span class="dist-primary">~28 min</span>
+            <div class="dist-modes">
+              <span class="dist-mode velo">🚲 28 min</span>
               <span class="dist-mode voiture">🚗 12 min</span>
             </div>
           </td>
           <td class="dist-cell">
             <span class="dist-primary">~35 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 30 min</span>
-              <span class="dist-mode voiture">🚗 12 min</span>
+              <span class="dist-mode velo">🚲 35 min</span>
+              <span class="dist-mode voiture">🚗 14 min</span>
             </div>
           </td>
-          <td class="dist-cell">
-            <span class="dist-primary">~45 min</span>
-            <div class="dist-modes">
-              <span class="dist-mode bus">🚌 40 min</span>
-              <span class="dist-mode voiture">🚗 15 min</span>
-            </div>
-          </td>
-        </tr>
+                </tr>
         <tr>
           <td>
             KEYCE Santé &amp; ECEMA
             <small>59-61 rue Bobillot</small>
           </td>
           <td class="dist-cell">
+            <span class="dist-primary">~19 min</span>
+            <div class="dist-modes">
+              <span class="dist-mode pied">🚶 19 min</span>
+              <span class="dist-mode velo">🚲 8 min</span>
+            </div>
+          </td>
+          <td class="dist-cell">
             <span class="dist-primary">~30 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 25 min</span>
-              <span class="dist-mode velo">🚲 14 min</span>
+              <span class="dist-mode pied">🚶 30 min</span>
+              <span class="dist-mode velo">🚲 11 min</span>
             </div>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~32 min</span>
+            <span class="dist-primary">~19 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 27 min</span>
-              <span class="dist-mode velo">🚲 15 min</span>
+              <span class="dist-mode velo">🚲 19 min</span>
+              <span class="dist-mode voiture">🚗 9 min</span>
             </div>
           </td>
-          <td class="dist-cell">
-            <span class="dist-primary">~28 min</span>
-            <div class="dist-modes">
-              <span class="dist-mode bus">🚌 25 min</span>
-              <span class="dist-mode voiture">🚗 10 min</span>
-            </div>
-          </td>
-        </tr>
+                </tr>
         <tr>
           <td>
             DN MADE — Lycée Mas Jambost
             <small>7 allée Maréchal Fayolle</small>
           </td>
           <td class="dist-cell">
-            <span class="dist-primary">~32 min</span>
-            <div class="dist-modes">
-              <span class="dist-mode bus">🚌 28 min</span>
-              <span class="dist-mode voiture">🚗 12 min</span>
-            </div>
-          </td>
-          <td class="dist-cell">
-            <span class="dist-primary">~35 min</span>
-            <div class="dist-modes">
-              <span class="dist-mode bus">🚌 30 min</span>
-              <span class="dist-mode voiture">🚗 13 min</span>
-            </div>
-          </td>
-          <td class="dist-cell">
             <span class="dist-primary">~25 min</span>
             <div class="dist-modes">
-              <span class="dist-mode bus">🚌 22 min</span>
-              <span class="dist-mode voiture">🚗 8 min</span>
+              <span class="dist-mode pied">🚶 25 min</span>
+              <span class="dist-mode velo">🚲 9 min</span>
             </div>
           </td>
-        </tr>
+          <td class="dist-cell">
+            <span class="dist-primary">~15 min</span>
+            <div class="dist-modes">
+              <span class="dist-mode pied">🚶 15 min</span>
+              <span class="dist-mode velo">🚲 5 min</span>
+            </div>
+          </td>
+          <td class="dist-cell">
+            <span class="dist-primary">~10 min</span>
+            <div class="dist-modes">
+              <span class="dist-mode velo">🚲 10 min</span>
+              <span class="dist-mode voiture">🚗 6 min</span>
+            </div>
+          </td>
+                </tr>
       </tbody>
     </table>
     </div>
@@ -1193,8 +1204,8 @@
               Meissonier
             </div>
             <div class="point-distance-modes">
-              <span class="dist-mode bus">🚌 18 min</span>
-              <span class="dist-mode velo">🚲 14 min</span>
+              <span class="dist-mode velo">🚲 13 min</span>
+              <span class="dist-mode voiture">🚗 8 min</span>
             </div>
           </div>
           <div class="point-distance-row">
@@ -1203,8 +1214,8 @@
               Dutreix
             </div>
             <div class="point-distance-modes">
-              <span class="dist-mode bus">🚌 20 min</span>
-              <span class="dist-mode velo">🚲 15 min</span>
+              <span class="dist-mode velo">🚲 17 min</span>
+              <span class="dist-mode voiture">🚗 8 min</span>
             </div>
           </div>
           <div class="point-distance-row">
@@ -1213,8 +1224,8 @@
               E-Magine
             </div>
             <div class="point-distance-modes">
-              <span class="dist-mode bus">🚌 28 min</span>
-              <span class="dist-mode voiture">🚗 12 min</span>
+              <span class="dist-mode velo">🚲 21 min</span>
+              <span class="dist-mode voiture">🚗 9 min</span>
             </div>
           </div>
         </div>
@@ -1231,8 +1242,8 @@
               Meissonier
             </div>
             <div class="point-distance-modes">
-              <span class="dist-mode bus">🚌 20 min</span>
-              <span class="dist-mode velo">🚲 15 min</span>
+              <span class="dist-mode velo">🚲 7 min</span>
+              <span class="dist-mode voiture">🚗 3 min</span>
             </div>
           </div>
           <div class="point-distance-row">
@@ -1241,8 +1252,8 @@
               Dutreix
             </div>
             <div class="point-distance-modes">
-              <span class="dist-mode bus">🚌 22 min</span>
-              <span class="dist-mode velo">🚲 16 min</span>
+              <span class="dist-mode velo">🚲 10 min</span>
+              <span class="dist-mode voiture">🚗 4 min</span>
             </div>
           </div>
           <div class="point-distance-row">
@@ -1251,8 +1262,8 @@
               E-Magine
             </div>
             <div class="point-distance-modes">
-              <span class="dist-mode bus">🚌 30 min</span>
-              <span class="dist-mode voiture">🚗 13 min</span>
+              <span class="dist-mode velo">🚲 16 min</span>
+              <span class="dist-mode voiture">🚗 7 min</span>
             </div>
           </div>
         </div>
@@ -1269,8 +1280,8 @@
               Meissonier
             </div>
             <div class="point-distance-modes">
-              <span class="dist-mode bus">🚌 20 min</span>
               <span class="dist-mode velo">🚲 10 min</span>
+              <span class="dist-mode voiture">🚗 6 min</span>
             </div>
           </div>
           <div class="point-distance-row">
@@ -1279,8 +1290,8 @@
               Dutreix
             </div>
             <div class="point-distance-modes">
-              <span class="dist-mode bus">🚌 22 min</span>
-              <span class="dist-mode velo">🚲 12 min</span>
+              <span class="dist-mode velo">🚲 11 min</span>
+              <span class="dist-mode voiture">🚗 5 min</span>
             </div>
           </div>
           <div class="point-distance-row">
@@ -1289,8 +1300,8 @@
               E-Magine
             </div>
             <div class="point-distance-modes">
-              <span class="dist-mode bus">🚌 38 min</span>
-              <span class="dist-mode voiture">🚗 15 min</span>
+              <span class="dist-mode velo">🚲 4 min</span>
+              <span class="dist-mode voiture">🚗 2 min</span>
             </div>
           </div>
         </div>
@@ -1307,8 +1318,8 @@
               Meissonier
             </div>
             <div class="point-distance-modes">
-              <span class="dist-mode bus">🚌 18 min</span>
-              <span class="dist-mode velo">🚲 12 min</span>
+              <span class="dist-mode velo">🚲 9 min</span>
+              <span class="dist-mode voiture">🚗 5 min</span>
             </div>
           </div>
           <div class="point-distance-row">
@@ -1317,8 +1328,8 @@
               Dutreix
             </div>
             <div class="point-distance-modes">
-              <span class="dist-mode bus">🚌 20 min</span>
-              <span class="dist-mode velo">🚲 14 min</span>
+              <span class="dist-mode velo">🚲 12 min</span>
+              <span class="dist-mode voiture">🚗 5 min</span>
             </div>
           </div>
           <div class="point-distance-row">
@@ -1327,8 +1338,8 @@
               E-Magine
             </div>
             <div class="point-distance-modes">
-              <span class="dist-mode bus">🚌 28 min</span>
-              <span class="dist-mode voiture">🚗 12 min</span>
+              <span class="dist-mode velo">🚲 18 min</span>
+              <span class="dist-mode voiture">🚗 7 min</span>
             </div>
           </div>
         </div>
