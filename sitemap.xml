@@ -33,6 +33,14 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Logement alternance -->
+  <url>
+    <loc>https://www.studio-limoges.fr/logement-etudiant-alternance-limoges</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Distances résidences -->
   <url>
     <loc>https://www.studio-limoges.fr/distances-residences-limoges</loc>
@@ -97,6 +105,13 @@
   <!-- EN — Science Faculty housing -->
   <url>
     <loc>https://www.studio-limoges.fr/en/logement-etudiant-fac-des-sciences-limoges</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- EN — Work-study housing -->
+  <url>
+    <loc>https://www.studio-limoges.fr/en/logement-etudiant-alternance-limoges</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
