@@ -49,6 +49,14 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Logement prépa / CPGE -->
+  <url>
+    <loc>https://www.studio-limoges.fr/logement-etudiant-prepa-limoges</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Distances résidences -->
   <url>
     <loc>https://www.studio-limoges.fr/distances-residences-limoges</loc>
@@ -127,6 +135,13 @@
   <!-- EN — Engineering-school housing -->
   <url>
     <loc>https://www.studio-limoges.fr/en/logement-etudiant-ingenieur-limoges</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- EN — Prépa / CPGE housing -->
+  <url>
+    <loc>https://www.studio-limoges.fr/en/logement-etudiant-prepa-limoges</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
