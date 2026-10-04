@@ -33,6 +33,14 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Logement étudiant pas cher -->
+  <url>
+    <loc>https://www.studio-limoges.fr/logement-etudiant-pas-cher-limoges</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Logement Fac des Sciences -->
   <url>
     <loc>https://www.studio-limoges.fr/logement-etudiant-fac-des-sciences-limoges</loc>
@@ -129,6 +137,13 @@
   <!-- EN — IAE housing -->
   <url>
     <loc>https://www.studio-limoges.fr/en/logement-etudiant-iae-limoges</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- EN — Cheap student housing -->
+  <url>
+    <loc>https://www.studio-limoges.fr/en/logement-etudiant-pas-cher-limoges</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
