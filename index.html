@@ -166,11 +166,23 @@
     "@context": "https://schema.org",
     "@type": "ItemList",
     "name": "Studios à louer à Limoges",
-    "numberOfItems": 4,
+    "numberOfItems": 5,
     "itemListElement": [
       {
         "@type": "ListItem",
         "position": 1,
+        "item": {
+          "@type": "Apartment",
+          "name": "T1 duplex 24 m² — Rue François Perrin (centre-ville), Limoges",
+          "floorSize": {"@type": "QuantitativeValue", "value": 24, "unitCode": "MTK"},
+          "numberOfRooms": 1,
+          "address": {"@type": "PostalAddress", "addressLocality": "Limoges", "addressRegion": "Haute-Vienne", "postalCode": "87000"},
+          "offers": {"@type": "Offer", "price": "361.42", "priceCurrency": "EUR", "availability": "https://schema.org/InStock"}
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
         "item": {
           "@type": "Apartment",
           "name": "T1 20 m² — Rue Banc Léger (hyper-centre), Limoges",
@@ -182,7 +194,7 @@
       },
       {
         "@type": "ListItem",
-        "position": 2,
+        "position": 3,
         "item": {
           "@type": "Apartment",
           "name": "Studio 18 m² — La Borie, Limoges",
@@ -194,7 +206,7 @@
       },
       {
         "@type": "ListItem",
-        "position": 3,
+        "position": 4,
         "item": {
           "@type": "Apartment",
           "name": "Studio 25 m² — Centre-ville, Limoges",
@@ -206,7 +218,7 @@
       },
       {
         "@type": "ListItem",
-        "position": 4,
+        "position": 5,
         "item": {
           "@type": "Apartment",
           "name": "Studio étudiant 22 m² — quartier Vanteaux, Limoges",
@@ -1113,6 +1125,26 @@
     </div>
 
     <div class="studios-grid">
+
+      <div class="studio-card reveal">
+        <div class="studio-card-img" style="background-image: url('photos/studio-16P31.jpg');">
+          <span class="studio-pill available">Disponible de suite</span>
+        </div>
+        <div class="studio-card-body">
+          <div class="studio-card-title">T1 duplex 24 m² — Rue François Perrin</div>
+          <div class="studio-card-zone">Centre-ville, proche lignes de bus — Réf. 16P31</div>
+          <div class="studio-card-details">
+            <span class="detail-chip">Duplex</span>
+            <span class="detail-chip">Kitchenette équipée</span>
+            <span class="detail-chip">3e étage</span>
+            <span class="detail-chip">Double vitrage</span>
+          </div>
+          <div class="studio-card-footer">
+            <div class="studio-price">361,42 € <span>cc/mois</span></div>
+            <a href="#contact" class="studio-cta">Demander une visite →</a>
+          </div>
+        </div>
+      </div>
 
       <div class="studio-card reveal">
         <div class="studio-card-img" style="background-image: url('photos/studio-19V43.jpg');">
