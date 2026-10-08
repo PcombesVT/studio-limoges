@@ -111,6 +111,20 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Fiche bien : T1 duplex rue François Perrin (16P31) -->
+  <url>
+    <loc>https://www.studio-limoges.fr/t1-duplex-francois-perrin-limoges</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Fiche bien : T1 rue Banc Léger (19V43) -->
+  <url>
+    <loc>https://www.studio-limoges.fr/t1-banc-leger-limoges</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <!-- EN — English home -->
   <url>
