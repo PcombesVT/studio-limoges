@@ -167,11 +167,23 @@
     "@context": "https://schema.org",
     "@type": "ItemList",
     "name": "Studios to rent in Limoges",
-    "numberOfItems": 3,
+    "numberOfItems": 4,
     "itemListElement": [
       {
         "@type": "ListItem",
         "position": 1,
+        "item": {
+          "@type": "Apartment",
+          "name": "1-room flat 20 m² — Rue Banc Léger (city centre), Limoges",
+          "floorSize": {"@type": "QuantitativeValue", "value": 20, "unitCode": "MTK"},
+          "numberOfRooms": 1,
+          "address": {"@type": "PostalAddress", "addressLocality": "Limoges", "addressRegion": "Haute-Vienne", "postalCode": "87000"},
+          "offers": {"@type": "Offer", "price": "240.13", "priceCurrency": "EUR", "availability": "https://schema.org/InStock"}
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
         "item": {
           "@type": "Apartment",
           "name": "Studio 18 m² — La Borie, Limoges",
@@ -183,7 +195,7 @@
       },
       {
         "@type": "ListItem",
-        "position": 2,
+        "position": 3,
         "item": {
           "@type": "Apartment",
           "name": "Studio 25 m² — City centre, Limoges",
@@ -195,7 +207,7 @@
       },
       {
         "@type": "ListItem",
-        "position": 3,
+        "position": 4,
         "item": {
           "@type": "Apartment",
           "name": "Student studio 22 m² — Vanteaux district, Limoges",
@@ -1104,6 +1116,26 @@
     <div class="studios-grid">
 
       <div class="studio-card reveal">
+        <div class="studio-card-img" style="background-image: url('/photos/studio-19V43.jpg');">
+          <span class="studio-pill available">Available now</span>
+        </div>
+        <div class="studio-card-body">
+          <div class="studio-card-title">1-room flat 20 m² — Rue Banc Léger</div>
+          <div class="studio-card-zone">City centre, close to all amenities — Ref. 19V43</div>
+          <div class="studio-card-details">
+            <span class="detail-chip">Fitted kitchen</span>
+            <span class="detail-chip">4th floor</span>
+            <span class="detail-chip">Double glazing</span>
+            <span class="detail-chip">Intercom</span>
+          </div>
+          <div class="studio-card-footer">
+            <div class="studio-price">240,13 € <span>incl./mo</span></div>
+            <a href="#contact" class="studio-cta">Request a viewing →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="studio-card reveal">
         <div class="studio-card-img" style="background-image: url('/photos/studio-37D31.jpg');">
           <span class="studio-pill available">Available now</span>
         </div>
@@ -1203,7 +1235,7 @@
 
     <div style="text-align:center; margin-top: 40px;">
       <p style="color: var(--muted); font-size: .92rem; margin-bottom: 20px; max-width: 620px; margin-left: auto; margin-right: auto;">
-        These studios have just been let — contact Begip to find out which properties are currently available in Limoges.
+        Available studios go fast — contact Begip to find out which properties are currently available in Limoges.
       </p>
       <a href="https://begip.fr" target="_blank" rel="noopener noreferrer" class="btn-primary">
         See Begip's full portfolio
