@@ -146,6 +146,13 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Fiche bien : T1 gare des Bénédictins (23G3) -->
+  <url>
+    <loc>https://www.studio-limoges.fr/t1-gare-benedictins-limoges</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <!-- EN — English home -->
   <url>
