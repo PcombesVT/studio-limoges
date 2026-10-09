@@ -139,6 +139,13 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Fiche bien : T1 rue Elie Berthet (29E6) -->
+  <url>
+    <loc>https://www.studio-limoges.fr/t1-elie-berthet-limoges</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <!-- EN — English home -->
   <url>
