@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://studio-limoges.fr/sitemap.xml
+Sitemap: https://www.studio-limoges.fr/sitemap.xml
