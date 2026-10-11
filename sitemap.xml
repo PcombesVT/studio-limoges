@@ -9,6 +9,14 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- Partenaires locaux -->
+  <url>
+    <loc>https://www.studio-limoges.fr/partenaires-locaux-limoges</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
   <!-- Formations supérieures (studio par campus) -->
   <url>
     <loc>https://www.studio-limoges.fr/formations-superieures-limoges</loc>
