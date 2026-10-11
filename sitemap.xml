@@ -16,6 +16,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://www.studio-limoges.fr/en/partenaires-locaux-limoges</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 
   <!-- Formations supérieures (studio par campus) -->
   <url>
